@@ -53,31 +53,6 @@ body {
     position: absolute;  
 }
 
-.index_text01{
-    right: 320px;
-    top: 70px;
-    color: #225876;
-    font-weight: bold;
-    font-size: 1.8rem;
-}
-
-.index_text01 h1{
-    border: 3px solid #225876;
-    padding: 20px;
-    font-size: 2.2rem;
-}
-
-.index_text01 p:nth-child(2){
-    font-size: 5rem;
-    width: 10vw;
-    margin: 10px auto;
-}
-
-.index_text01 p:nth-child(3){
-    font-size: 1.6rem;
-    margin-left: 12px;
-}
-
 .index_text02,.index_text03{
     left: 220px;
     top: 100px;
@@ -417,15 +392,16 @@ body {
 }
 
 .mySwiper{
-    height: 40%;
-    box-sizing: border-box;    
+    height: 50%;
+    padding-top: 90px;
+    box-sizing: border-box; 
 }
 
-.swiper-slide {
+.news_slids {
     text-align: center;
     font-size: 18px;
+    
 
-    margin: auto;
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -470,9 +446,10 @@ body {
 /* news content */
 .news_box{
     display: flex;
+    
     margin-left: 50px;
     padding: 15px;
-    min-width: 35vw;
+    width: 35vw;
     position: relative;
     border: 1px solid #2F528F;
     transition: .8s;
@@ -547,6 +524,7 @@ body {
     padding-right: 170px;
     box-sizing: border-box;
     height: 40px;
+    
 }
 
 .new_links p{
@@ -575,12 +553,12 @@ body {
 /* news arrow */
 .arrow_right_news{
     position: absolute;
-    right: 110px;
+    right: 0;
     top: 0;
-    bottom: 60px;
+    bottom: 0;
     margin: auto;
-    margin-right: 10px;
-    height: 25px;
+    height: 22%;
+    width: 9%;
     font-size: 2.2rem;
     z-index: 10;
     color: #225876;
@@ -589,16 +567,19 @@ body {
 
 .arrow_left_news{
     position: absolute;
-    left: 160px;
+    display: flex;
+    justify-content: flex-end;
+    left: 0;
     top: 0;
-    bottom: 60px;
+    bottom: 0;
     margin: auto;
-    margin-right: 10px;
-    height: 25px;
+    height: 22%;
+    width: 12%;
     font-size: 2.2rem;
     z-index: 10;
     color: #225876;
     opacity: .7;
+
 }
 
 /* news content hover */
@@ -748,9 +729,17 @@ body {
 }
 
 .store_left p{
-    width: 12vw;
+    width: 18vw;
     font-size: 1rem;
     padding-left: 8px;
+
+}
+
+.store_left p:nth-child(2){
+    width: 12vw;
+
+
+
 }
 
 .store_right{

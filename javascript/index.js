@@ -1,10 +1,10 @@
 /* ----------banner---------- */
 var swiper = new Swiper(".index_Swiper", {
     loop: true,
-    autoplay: {
+/*     autoplay: {
     delay: 5500,
     disableOnInteraction: false,
-    },
+    }, */
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
