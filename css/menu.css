@@ -76,15 +76,16 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    
 }
 
 .menu_box_wrapper{
     display: flex;
     flex-wrap: wrap;
-    max-width: 70vw;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-bottom: 100px;
+    justify-content: flex-start;
+    width: 65%;
+    margin-top: 10px;
+
 }
 
 .column{
@@ -94,6 +95,8 @@
     align-items: center;
     margin: 15px;
     display: none;
+    
+
 }
 
 .column p{

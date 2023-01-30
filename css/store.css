@@ -125,6 +125,10 @@
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
+.store_left p:last-child{
+    width: 18vw;
+}
+
 .store_right{
     display: flex;
     justify-content: space-between;

@@ -72,20 +72,23 @@
 .news_wrapper{
     display: flex;
     justify-content: center;
+
+    
 }
 
 .news_content_wrapper{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin-bottom: 100px;
     margin-top: 30px;
-    max-width: 80vw;
+    width: 100%;
 }
 
 .news_content{
-    margin: 10px 30px 10px 20px;
+    margin: 10px 55px 10px 55px;
     padding: 15px;
-    min-width: 35vw;
+    width: 35vw;
     position: relative;
     border: 1px solid #2F528F;
     display: none;
