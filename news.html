@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- css主檔 -->
+    <link rel="stylesheet" href="./css/common/header_footer.css">
+    <link rel="stylesheet" href="./css/common/banner_breadcrumb.css">
+    <link rel="stylesheet" href="./css/news.css">
+</head>
+
+
+ <body>
+    <!-- header navbar -->
+    <header class="header_main">
+        <nav class="header_nav">
+            <a href="./index.html">
+                <img class="nav_logo" src="./images/header/header-icon.png" alt="minute Tea-icon">
+            </a>
+            <ul class="nav_bar">
+                <li><a href="./about.html">關於我們</a></li>
+                <li><a href="./menu.html">推薦飲品</a></li>
+                <li><a href="./news.html">最新消息</a></li>
+                <li><a href="./store.html">門市資訊</a></li>
+                <li><a href="./join-us.html">菁英招募</a></li>
+                <li><a href="./chain.html">加盟資訊</a></li>
+            </ul>
+            <ul class="nav_icons">
+                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
+                <li><a href="https://line.me/zh-hant/" target="_blank"><i class="fa-brands fa-line"></i></a></li>
+                <li><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- banner & breadcrumb -->
+    <section>
+        <div class="about_banner">
+            <img class="about_bimg" src="./images/about/about-banner.png" alt="about_banner">
+            <div class="about_banner_text" >
+                <h1>LATEST NEWS</h1>
+                <P><span>&#8226;</span>最新消息<span>&#8226;</span></P>
+            </div>
+            <div class="breadcrumb">
+                <a href=""><i class="fa-solid fa-house-chimney"></i>首頁/最新消息</a>
+            </div>    
+        </div>
+    </section>
+
+
+    <!-- news btn -->
+    <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('newopen')">
+        <h1>門市開幕</h1> 
+        </button>
+        <button class="btn" onclick="filterSelection('discount')">
+        <h1>優惠活動</h1> 
+        </button>
+        <button class="btn" onclick="filterSelection('all')">
+        <h1>所有訊息</h1> 
+        </button>
+    </div>
+    <div class="main_nav_boder"></div>
+
+    
+    
+    <!-- news content -->
+    <section>
+        <div class="news_wrapper">
+            <div class="news_content_wrapper">
+                <div class="news_content newopen">
+                    <img src="./images/news/news01.png" alt="menu">
+                    <div class="news_content_text">
+                        <h1>[門市開幕]</h1>
+                        <h2>Minute Tea(中正店)</h2>
+                        <p>Minute Tea(桃園中正店)</p>
+                        <p>TEL:03-3836511</p>
+                        <p>ADD:桃園市蘆竹區中正路42號</p>
+                        <a href="">
+                        <p>查看更多<i class="fa-solid fa-arrow-right"></i></p>
+                        </a>
+                    </div>
+                    <div class="min_box">
+                        <h1>12</h1>
+                        <h2>NOV</h2>
+                    </div>
+                </div>
+                <div class="news_content newopen">
+                    <img src="./images/news/news02.png" alt="menu">
+                    <div class="news_content_text">
+                        <h1>[門市開幕]</h1>
+                        <h2>Minute Tea(三民店)</h2>
+                        <p>Minute Tea(桃園三民店)</p>
+                        <p>TEL:03-3836525</p>
+                        <p>ADD:桃園市桃園區三民路20號</p>
+                        <a href="#">
+                            <p>查看更多<i class="fa-solid fa-arrow-right"></i></p>
+                        </a>
+                    </div>
+                    <div class="min_box">
+                        <h1>15</h1>
+                        <h2>NOV</h2>
+                    </div>
+                </div>
+                <div class="news_content newopen">
+                    <img src="./images/news/news03.png" alt="menu">
+                    <div class="news_content_text">
+                        <h1>[門市開幕]</h1>
+                        <h2>Minute Tea(南崁店)</h2>
+                        <p>Minute Tea(桃園南崁店)</p>
+                        <p>TEL:03-3836511</p>
+                        <p>ADD:桃園市蘆竹區南崁路300號</p>
+                        <a href="#">
+                            <p>查看更多<i class="fa-solid fa-arrow-right"></i></p>
+                        </a>
+                    </div>
+                    <div class="min_box">
+                        <h1>26</h1>
+                        <h2>MAY</h2>
+                    </div>
+                </div>
+                <div class="news_content newopen">
+                    <img src="./images/news/news04.png" alt="menu">
+                    <div class="news_content_text">
+                        <h1>[門市開幕]</h1>
+                        <h2>Minute Tea(ATT店)</h2>
+                        <p>Minute Tea(桃園ATT店)</p>
+                        <p>TEL:03-3636525</p>
+                        <p>ADD:桃園市蘆竹區中正路147號</p>
+                        <a href="#">
+                            <p>查看更多<i class="fa-solid fa-arrow-right"></i></p>
+                        </a>
+                    </div>
+                    <div class="min_box">
+                        <h1>10</h1>
+                        <h2>DEM</h2>
+                    </div>
+                </div>
+                <div class="news_content discount">
+                    <img src="./images/news/news05.png" alt="menu">
+                    <div class="news_content_text">
+                        <h1>[門市開幕]</h1>
+                        <h2>Minute Tea(芝山店)</h2>
+                        <p>Minute Tea(台北芝山店)</p>
+                        <p>TEL:03-355522</p>
+                        <p>ADD:台北市內湖區東湖路23號</p>
+                        <a href="#">
+                            <p>查看更多<i class="fa-solid fa-arrow-right"></i></p>
+                        </a>
+                    </div>
+                    <div class="min_box">
+                        <h1>12</h1>
+                        <h2>MAY</h2>
+                    </div>
+                </div>
+                <div class="news_content discount">
+                    <img src="./images/news/news06.png" alt="menu">
+                    <div class="news_content_text">
+                        <h1>[門市開幕]</h1>
+                        <h2>Minute Tea(公館店)</h2>
+                        <p>Minute Tea(台北公館店)</p>
+                        <p>TEL:03-3836511</p>
+                        <p>ADD:台北市士林區德行西路154號</p>
+                        <a href="#">
+                            <p>查看更多<i class="fa-solid fa-arrow-right"></i></p>
+                        </a>
+                    </div>
+                    <div class="min_box">
+                        <h1>22</h1>
+                        <h2>MAY</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- menu -->
+<!--     <section>
+        <div class="news_wrapper">
+            <div class="main_nav_boder"></div>
+            <div class="news_box_wrapper">
+                <div class="news_box">
+                    <img src="./images/news/news01.png" alt="menu">
+                    <div class="news_box_text">
+                        <h1>[門市開幕]</h1>
+                        <h2>Minute Tea(中正店)</h2>
+                        <p>Minute Tea(桃園中正店)</p>
+                        <p>TEL:03-3836511</p>
+                        <p>ADD:桃園市蘆竹區中正路42號</p>
+                        <p>查看更多<i class="fa-solid fa-arrow-right"></i></p>
+                    </div>
+                    <div class="min_box">
+                        <h1>12</h1>
+                        <h2>NOV</h2>
+                    </div>
+                </div>
+                <div class="news_box">
+                    <img src="./images/news/news02.png" alt="menu">
+                    <div class="news_box_text">
+                        <h1>[門市開幕]</h1>
+                        <h2>Minute Tea(三民店)</h2>
+                        <p>Minute Tea(桃園三民店)</p>
+                        <p>TEL:03-3836525</p>
+                        <p>ADD:桃園市桃園區三民路20號</p>
+                        <a href="#">
+                            <p>查看更多<i class="fa-solid fa-arrow-right"></i></p>
+                        </a>
+                    </div>
+                    <div class="min_box">
+                        <h1>15</h1>
+                        <h2>NOV</h2>
+                    </div>
+                </div>
+                <div class="news_box">
+                    <img src="./images/news/news03.png" alt="menu">
+                    <div class="news_box_text">
+                        <h1>[門市開幕]</h1>
+                        <h2>Minute Tea(南崁店)</h2>
+                        <p>Minute Tea(桃園南崁店)</p>
+                        <p>TEL:03-3836511</p>
+                        <p>ADD:桃園市蘆竹區南崁路300號</p>
+                        <a href="#">
+                            <p>查看更多<i class="fa-solid fa-arrow-right"></i></p>
+                        </a>
+                    </div>
+                    <div class="min_box">
+                        <h1>26</h1>
+                        <h2>MAY</h2>
+                    </div>
+                </div>
+                <div class="news_box">
+                    <img src="./images/news/news04.png" alt="menu">
+                    <div class="news_box_text">
+                        <h1>[門市開幕]</h1>
+                        <h2>Minute Tea(ATT店)</h2>
+                        <p>Minute Tea(桃園ATT店)</p>
+                        <p>TEL:03-3636525</p>
+                        <p>ADD:桃園市蘆竹區中正路147號</p>
+                        <a href="#">
+                            <p>查看更多<i class="fa-solid fa-arrow-right"></i></p>
+                        </a>
+                    </div>
+                    <div class="min_box">
+                        <h1>10</h1>
+                        <h2>DEM</h2>
+                    </div>
+                </div>
+                <div class="news_box">
+                    <img src="./images/news/news05.png" alt="menu">
+                    <div class="news_box_text">
+                        <h1>[門市開幕]</h1>
+                        <h2>Minute Tea(芝山店)</h2>
+                        <p>Minute Tea(台北芝山店)</p>
+                        <p>TEL:03-355522</p>
+                        <p>ADD:台北市內湖區東湖路23號</p>
+                        <a href="#">
+                            <p>查看更多<i class="fa-solid fa-arrow-right"></i></p>
+                        </a>
+                    </div>
+                    <div class="min_box">
+                        <h1>12</h1>
+                        <h2>MAY</h2>
+                    </div>
+                </div>
+                <div class="news_box">
+                    <img src="./images/news/news06.png" alt="menu">
+                    <div class="news_box_text">
+                        <h1>[門市開幕]</h1>
+                        <h2>Minute Tea(公館店)</h2>
+                        <p>Minute Tea(台北公館店)</p>
+                        <p>TEL:03-3836511</p>
+                        <p>ADD:台北市士林區德行西路154號</p>
+                        <a href="#">
+                            <p>查看更多<i class="fa-solid fa-arrow-right"></i></p>
+                        </a>
+                    </div>
+                    <div class="min_box">
+                        <h1>22</h1>
+                        <h2>MAY</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- footer -->
+    <footer class="about_footer">
+        <nav class="footer_nav">
+            <div class="footer_center">
+                <a class="footer_logo" href="./index.html">
+                    <img class="footer_nav_logo" src="./images/footer/footer-logo.png" alt="minute Tea-icon">
+                </a>
+                <div class="footer_boder"></div>
+                <ul class="footer_connect">
+                    <li>
+                        <p>電話 : 033836213</p>
+                    </li>
+                    <li>
+                        <p>傳真 : 886-4-23812576</p>
+                    </li>
+                    <li>
+                        <p>加盟/客服專線 : 0800-812213</p>
+                    </li>
+                    <li>
+                        <a href="mailto:h0989541162@gmail.com">地址 : 桃園市大園區菓林里17巷50-1號  / 聯絡我們 <i class="fa-solid fa-envelope"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_btm">
+                <p>本網站為緯育TibaMe前端工程師班第82期學員專題作品，<br>本平台僅供學習、展示之
+                    用。參考資源: 大苑子 、<br>五桐號、茶湯會、Q Buger、lkea 。</p>
+                <ul class="footer_nav_bar">
+                    <li><a href="./about.html">關於我們</a></li>
+                    <li><a href="./menu.html">推薦飲品</a></li>
+                    <li><a href="./news.html">最新消息</a></li>
+                    <li><a href="./store.html">門市資訊</a></li>
+                    <li><a href="./join-us.html">菁英招募</a></li>
+                    <li><a href="./chain.html">加盟資訊</a></li>
+                </ul>
+
+                <ul class="footer_nav_icons">
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
+                    <li><a href="https://line.me/zh-hant/" target="_blank"><i class="fa-brands fa-line"></i></a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
+
+        <!-- AOS.js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
+    <!-- js主檔 -->
+    <script src="./javascript/news.js"></script>
+
+</body>
+</html>

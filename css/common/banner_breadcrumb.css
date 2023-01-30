@@ -1,0 +1,53 @@
+/* banner & breadcrumb */
+.about_banner{
+    position: relative;
+}
+
+.about_bimg{
+    max-width: 100vw;
+}
+
+.about_banner_text{
+    color: #ffffff;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-65%);
+    text-shadow: 1px 3px 6px rgba(0, 0, 0, 1);
+}
+
+.about_banner_text h1{
+    font-size: 2.1rem;
+    padding-bottom: 5px;
+}
+
+.about_banner_text p{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.about_banner_text span:first-child::after{
+    content: "[";
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.about_banner_text span:last-child::before{
+    content: "]";
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.breadcrumb a{
+    font-size: 0.6rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    color: rgba(34, 88, 118, 1);
+}

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- css主檔 -->
+    <link rel="stylesheet" href="./css/common/header_footer.css">
+    <link rel="stylesheet" href="./css/common/banner_breadcrumb.css">
+    <link rel="stylesheet" href="./css/menu.css">
+
+</head>
+
+ <!-- header navbar -->
+ <body>
+    <header class="header_main">
+        <nav class="header_nav">
+            <a href="./index.html">
+                <img class="nav_logo" src="./images/header/header-icon.png" alt="minute Tea-icon">
+            </a>
+            <ul class="nav_bar">
+                <li><a href="./about.html">關於我們</a></li>
+                <li><a href="./menu.html">推薦飲品</a></li>
+                <li><a href="./news.html">最新消息</a></li>
+                <li><a href="./store.html">門市資訊</a></li>
+                <li><a href="./join-us.html">菁英招募</a></li>
+                <li><a href="./chain.html">加盟資訊</a></li>
+            </ul>
+            <ul class="nav_icons">
+                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
+                <li><a href="https://line.me/zh-hant/" target="_blank"><i class="fa-brands fa-line"></i></a></li>
+                <li><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- banner & breadcrumb -->
+    <section>
+        <div class="about_banner">
+            <img class="about_bimg" src="./images/about/about-banner.png" alt="about_banner">
+            <div class="about_banner_text" >
+                <h1>ABOUT US</h1>
+                <P><span>&#8226;</span>推薦飲品<span>&#8226;</span></P>
+            </div>
+            <div class="breadcrumb">
+                <a href=""><i class="fa-solid fa-house-chimney"></i>首頁/推薦飲品</a>
+            </div>    
+        </div>
+    </section>
+
+    <!-- menu btn -->
+        <div id="myBtnContainer">
+          <button class="btn" onclick="filterSelection('nature')">
+          <h1>經典飲品</h1> 
+          </button>
+          <button class="btn" onclick="filterSelection('special')">
+          <h1>限定飲品</h1> 
+          </button>
+        </div>
+        <div class="main_nav_boder"></div>
+
+        <!-- menu -->
+    <section>
+        <div class="menu_wrapper">
+            <div class="menu_box_wrapper">
+                <div class="column nature">
+                    <div class="columnimg">
+                    <img src="./images/menu/menu01.png" alt="menu">
+                    </div>
+                    <p><span>&#8211;</span> 特級綠茶 <span>&#8211;</span></p>
+                </div>
+                <div class="column nature">
+                    <div class="columnimg">
+                        <img src="./images/menu/menu02.png" alt="menu">
+                    </div>
+                    <p><span>&#8211;</span> 烏龍綠茶 <span>&#8211;</span></p>
+                </div>
+                <div class="column nature">
+                    <div class="columnimg">
+                        <img src="./images/menu/menu03.png" alt="menu">
+                    </div>
+                    <p><span>&#8211;</span> 梅子綠茶 <span>&#8211;</span></p>
+                </div>
+                <div class="column nature">
+                    <div class="columnimg">
+                        <img src="./images/menu/menu04.png" alt="menu">
+                    </div>
+                    <p><span>&#8211;</span> 冷露綠茶 <span>&#8211;</span></p>
+                </div>
+                <div class="column nature">
+                    <div class="columnimg">
+                        <img src="./images/menu/menu05.png" alt="menu">
+                    </div>
+                    <p><span>&#8211;</span> 黃金大麥 <span>&#8211;</span></p>
+                </div>
+                <div class="column nature">
+                    <div class="columnimg">
+                        <img src="./images/menu/menu06.png" alt="menu">
+                    </div>
+                    <p><span>&#8211;</span> 特級紅茶 <span>&#8211;</span></p>
+                </div>
+                <div class="column nature">
+                    <div class="columnimg">
+                        <img src="./images/menu/menu07.png" alt="menu">
+                    </div>
+                    <p><span>&#8211;</span> 蜂蜜紅茶 <span>&#8211;</span></p>
+                </div>
+                <div class="column nature">
+                    <div class="columnimg">
+                        <img src="./images/menu/menu08.png" alt="menu">
+                    </div>
+                    <p><span>&#8211;</span> 文山包種 <span>&#8211;</span></p>
+                </div>
+                <div class="column nature">
+                    <div class="columnimg">
+                        <img src="./images/menu/menu09.png" alt="menu">
+                    </div>
+                    <p><span>&#8211;</span> 冬瓜青茶 <span>&#8211;</span></p>
+                </div>
+                <div class="column nature">
+                    <div class="columnimg">
+                        <img src="./images/menu/menu10.png" alt="menu">
+                    </div>
+                    <p><span>&#8211;</span> 紅茶拿鐵 <span>&#8211;</span></p>
+                </div>
+                <div class="column nature">
+                    <div class="columnimg">
+                        <img src="./images/menu/menu11.png" alt="menu">
+                    </div>
+                    <p><span>&#8211;</span> 冬瓜拿鐵 <span>&#8211;</span></p>
+                </div>
+                <div class="column nature">
+                    <div class="columnimg">
+                        <img src="./images/menu/menu12.png" alt="menu">
+                    </div>
+                    <p><span>&#8211;</span> 檸檬冰茶 <span>&#8211;</span></p>
+                </div>
+                <div class="column special">
+                    <div class="columnimg">
+                        <img src="./images/menu/menu13.png" alt="menu">
+                    </div>
+                    <p><span>&#8211;</span> 莓果冰茶 <span>&#8211;</span></p>
+                </div>
+                <div class="column special">
+                    <div class="columnimg">
+                        <img src="./images/menu/menu14.png" alt="menu">
+                    </div>
+                    <p><span>&#8211;</span> 綜合莓果 <span>&#8211;</span></p>
+                </div>
+                <div class="column special">
+                    <div class="columnimg">
+                        <img src="./images/menu/menu15.png" alt="menu">
+                    </div>
+                    <p><span>&#8211;</span> 蜂蜜檸檬 <span>&#8211;</span></p>
+                </div>
+                <div class="column special">
+                    <div class="columnimg">
+                        <img src="./images/menu/menu16.png" alt="menu">
+                    </div>
+                    <p><span>&#8211;</span> 草莓奶霜 <span>&#8211;</span></p>
+                </div>
+                <div class="column special">
+                    <div class="columnimg">
+                        <img src="./images/menu/menu17.png" alt="menu">
+                    </div>
+                    <p><span>&#8211;</span> 柳橙綠茶 <span>&#8211;</span></p>
+                </div>
+                <div class="column special">
+                    <div class="columnimg">
+                        <img src="./images/menu/menu18.png" alt="menu">
+                    </div>
+                    <p><span>&#8211;</span> 蔓越果茶 <span>&#8211;</span></p>
+                </div>
+                <div class="column special">
+                    <div class="columnimg">
+                        <img src="./images/menu/menu19.png" alt="menu">
+                    </div>
+                    <p><span>&#8211;</span> 特調果汁 <span>&#8211;</span></p>
+                </div>
+                <div class="column special">
+                    <div class="columnimg">
+                        <img src="./images/menu/menu20.png" alt="menu">
+                    </div>
+                    <p><span>&#8211;</span> 可可奶霜 <span>&#8211;</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="about_footer">
+        <nav class="footer_nav">
+            <div class="footer_center">
+                <a class="footer_logo" href="./index.html">
+                    <img class="footer_nav_logo" src="./images/footer/footer-logo.png" alt="minute Tea-icon">
+                </a>
+                <div class="footer_boder"></div>
+                <ul class="footer_connect">
+                    <li>
+                        <p>電話 : 033836213</p>
+                    </li>
+                    <li>
+                        <p>傳真 : 886-4-23812576</p>
+                    </li>
+                    <li>
+                        <p>加盟/客服專線 : 0800-812213</p>
+                    </li>
+                    <li>
+                        <a href="mailto:h0989541162@gmail.com">地址 : 桃園市大園區菓林里17巷50-1號  / 聯絡我們 <i class="fa-solid fa-envelope"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_btm">
+                <p>本網站為緯育TibaMe前端工程師班第82期學員專題作品，<br>本平台僅供學習、展示之
+                    用。參考資源: 大苑子 、<br>五桐號、茶湯會、Q Buger、lkea 。</p>
+                <ul class="footer_nav_bar">
+                    <li><a href="./about.html">關於我們</a></li>
+                    <li><a href="./menu.html">推薦飲品</a></li>
+                    <li><a href="./news.html">最新消息</a></li>
+                    <li><a href="./store.html">門市資訊</a></li>
+                    <li><a href="./join-us.html">菁英招募</a></li>
+                    <li><a href="./chain.html">加盟資訊</a></li>
+                </ul>
+
+                <ul class="footer_nav_icons">
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
+                    <li><a href="https://line.me/zh-hant/" target="_blank"><i class="fa-brands fa-line"></i></a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
+
+
+    <!-- js主檔 -->
+    <script src="./javascript/menu.js"></script>
+    <!-- AOS.JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+</html>

@@ -1,0 +1,257 @@
+@import url(./common/reset.css);
+
+.content_wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+/* img_right */
+.join_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.text_left{
+    margin-left: 60px;
+    padding-right: 20px;
+}
+
+.text_left h1{
+    color: rgba(131, 160, 177, 1);
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+
+}
+
+.text_left h2{
+    font-size: 1.2rem;
+    color: rgba(131, 160, 177, 1);
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.text_left p{
+    line-height: 1.6;
+    font-weight: 600;
+}
+
+.img_right img{
+    padding-left: 70px;
+    width: 25vw;
+}
+
+/* img_left */
+.text_right{
+    margin-left: 60px;
+}
+
+.text_right h1{
+    color: rgba(131, 160, 177, 1);
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+
+}
+
+.text_right h2{
+    font-size: 1.2rem;
+    color: rgba(131, 160, 177, 1);
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.text_right p{
+    line-height: 1.6;
+    font-weight: 600;
+}
+
+.img_left img{
+    padding-right: 30px;
+    width: 25vw;
+}
+
+/* both img */
+.join_content_both{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.text_center{
+    box-sizing: border-box;
+    padding-left: 120px;
+    padding-top: 40px;
+    width: 100%;
+}
+
+.text_center h1{
+    color: rgba(131, 160, 177, 1);
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+
+}
+
+.text_center h2{
+    font-size: 1.2rem;
+    color: rgba(131, 160, 177, 1);
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+.text_center p{
+    line-height: 1.6;
+    font-weight: 600;
+}
+
+.img_left_both img{
+    margin-left: 80px;
+    width: 30vw;
+}
+
+.img_right_both img{
+    width: 30vw;
+}
+
+/* box */
+.join_box{
+    max-width: 1000px;
+    max-height: 650px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+}
+
+.join_box_title{
+    text-align: center;
+    margin-bottom: 60px;
+    line-height: 1.6;
+    font-weight: 600;
+    color: rgb(131, 160, 177);
+}
+
+.join_box_title h1{
+    font-size: 2.5rem;
+}
+
+.join_box_title p{
+    font-size: 1.2rem;
+}
+
+.join_box ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.join_box li{
+    display: flex;
+    text-align: center;
+    max-width: 300px;
+    max-height: 300px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.join_box li img{
+    background-color: #E6E4E4;
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.join_box_text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 28%;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: .8s;
+}
+
+.join_box_text h1{
+    position: absolute;
+    top: 5px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    color: #ffffff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.8;
+    transition: .8s ;
+}
+
+.join_box_text p{
+    position: absolute;
+    top: 45px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    transition: .8s ;
+}
+
+/* box hover */
+.join_box li:hover .join_box_text{
+    height: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    transition: .8s ;
+}
+
+.join_box li:hover .join_box_text h1{
+    top: 95px;
+    transition: .8s;
+}
+
+.join_box li:hover .join_box_text p{
+    top: 145px;
+    transition: .8s;
+}
+
+.join_box_text h1:hover{
+    color: #a4d3f9;
+}
+
+/* btn */
+.join_btn{
+    text-align: center; 
+}
+
+.join_btn a{
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 20px;
+    font-weight: 600;
+    background-color: white; 
+    border-radius: 5px;
+    border: 2px solid rgb(131, 160, 177);
+    color: black;
+}
+
+.join_btn a:hover {
+    background-color: rgba(131, 160, 177, 1);
+    transition: ease-in .4s;
+    color: white;
+  }
+
+
+
+

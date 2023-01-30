@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- css主檔 -->
+    <link rel="stylesheet" href="./css/common/header_footer.css">
+    <link rel="stylesheet" href="./css/common/banner_breadcrumb.css">
+    <link rel="stylesheet" href="./css/store.css">
+</head>
+
+ <!-- header navbar -->
+ <body>
+    <header class="header_main">
+        <nav class="header_nav">
+            <a href="./index.html">
+                <img class="nav_logo" src="./images/header/header-icon.png" alt="minute Tea-icon">
+            </a>
+            <ul class="nav_bar">
+                <li><a href="./about.html">關於我們</a></li>
+                <li><a href="./menu.html">推薦飲品</a></li>
+                <li><a href="./news.html">最新消息</a></li>
+                <li><a href="./store.html">門市資訊</a></li>
+                <li><a href="./join-us.html">菁英招募</a></li>
+                <li><a href="./chain.html">加盟資訊</a></li>
+            </ul>
+            <ul class="nav_icons">
+                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
+                <li><a href="https://line.me/zh-hant/" target="_blank"><i class="fa-brands fa-line"></i></a></li>
+                <li><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- banner & breadcrumb -->
+    <section>
+        <div class="about_banner">
+            <img class="about_bimg" src="./images/about/about-banner.png" alt="about_banner">
+            <div class="about_banner_text" >
+                <h1>STORE</h1>
+                <P><span>&#8226;</span>門市資訊<span>&#8226;</span></P>
+            </div>
+            <div class="breadcrumb">
+                <a href=""><i class="fa-solid fa-house-chimney"></i>首頁/門市資訊</a>
+            </div>    
+        </div>
+    </section>
+
+    <!-- menu btn -->
+    <div id="myBtnContainer">
+        <button class="btn" onclick="filterSelection('north')">
+            <h1>北部</h1> 
+        </button>
+        <button class="btn" onclick="filterSelection('middle')">
+            <h1>中部</h1> 
+        </button>
+        <button class="btn" onclick="filterSelection('south')">
+            <h1>南部</h1> 
+        </button>
+        <button class="btn" onclick="filterSelection('all')">
+            <h1>所有據點</h1> 
+        </button>
+    </div>
+    <div class="main_nav_boder"></div>
+
+
+
+
+
+
+
+    <!-- store content -->
+    <section> 
+        <div class="store_content">
+            <div class="store_text north middle south">
+                <div class="store_left">
+                    <h1>門市名稱</h1>
+                    <h1>電話</h1>
+                    <h1>地址</h1>
+                </div>
+                <div class="store_right north middle south">
+                    <p>撥號</p>
+                    <p>導航</p>
+                </div>
+            </div>
+            <div class="store_text north">
+                <div class="store_left">
+                    <h2>台北 饒河店</h2>
+                    <p>02-270903</p>
+                    <p>台北市大安區通化街121號</p>
+                </div>
+                <div class="store_right">
+                    <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
+                    <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
+                </div>
+            </div>
+            <div class="store_text north">
+                <div class="store_left">
+                    <h2>台北 西門店</h2>
+                    <p>02-239555</p>
+                    <p>台北市松山區八德路四段73號</p>
+                </div>
+                <div class="store_right">
+                    <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
+                    <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
+                </div>
+            </div>
+            <div class="store_text north">
+                <div class="store_left">
+                    <h2>台北 公館店</h2>
+                    <p>02-259318</p>
+                    <p>台北市士林區德行西路154號</p>
+                </div>
+                <div class="store_right">
+                    <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
+                    <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
+                </div>
+            </div>
+            <div class="store_text north">
+                <div class="store_left">
+                    <h2>台北 芝山店</h2>
+                    <p>02-223566</p>
+                    <p>台北市內湖區東湖路23號</p>
+                </div>
+                <div class="store_right">
+                    <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
+                    <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
+                </div>
+            </div>
+            <div class="store_text north">
+                <div class="store_left">
+                    <h2>台北 開封店</h2>
+                    <p>02-269173</p>
+                    <p>台北市羅斯福路3段16巷5-1號</p>
+                </div>
+                <div class="store_right">
+                    <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
+                    <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
+                </div>
+            </div>
+            <div class="store_text north">
+                <div class="store_left">
+                    <h2>台北 內湖店</h2>
+                    <p>02-260900</p>
+                    <p>台北市文山區景文街14號</p>
+                </div>
+                <div class="store_right">
+                    <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
+                    <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
+                </div>
+            </div>
+            <div class="store_text north">
+                <div class="store_left">
+                    <h2>桃園 中正店</h2>
+                    <p>02-249050</p>
+                    <p>桃園市桃園區中正路53號</p>
+                </div>
+                <div class="store_right">
+                    <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
+                    <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
+                </div>
+            </div>
+            <div class="store_text north">
+                <div class="store_left">
+                    <h2>桃園 南崁店</h2>
+                    <p>02-209500</p>
+                    <p>桃園市桃園區中正路83號</p>
+                </div>
+                <div class="store_right">
+                    <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
+                    <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
+                </div>
+            </div>
+            <div class="store_text north">
+                <div class="store_left">
+                    <h2>桃園 大竹店</h2>
+                    <p>02-253158</p>
+                    <p>桃園市蘆竹區大竹路42號1樓</p>
+                </div>
+                <div class="store_right">
+                    <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
+                    <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
+                </div>
+            </div>
+            <div class="store_text north">
+                <div class="store_left">
+                    <h2>桃園 ATT店</h2>
+                    <p>02-259158</p>
+                    <p>桃園市桃園區中正路147號</p>
+                </div>
+                <div class="store_right">
+                    <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
+                    <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
+                </div>
+            </div>
+            <div class="store_text north">
+                <div class="store_left">
+                    <h2>新竹 光華店</h2>
+                    <p>02-239358</p>
+                    <p>新竹市北區光華街12-1號一樓</p>
+                </div>
+                <div class="store_right">
+                    <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
+                    <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
+                </div>
+            </div>
+            <div class="store_text north">
+                <div class="store_left">
+                    <h2>新竹 食品店</h2>
+                    <p>02-289158</p>
+                    <p>新竹市食品路12號</p>
+                </div>
+                <div class="store_right">
+                    <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
+                    <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
+                </div>
+            </div>
+            <div class="store_text north">
+                <div class="store_left">
+                    <h2>基隆 仁三店</h2>
+                    <p>02-269158</p>
+                    <p>基隆市仁愛區仁三路178號</h2>
+                </div>
+                <div class="store_right">
+                    <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
+                    <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
+                </div>
+            </div>
+            <div class="store_text middle">
+                <div class="store_left">
+                    <h2>苗栗 尚順店</h2>
+                    <p>03-762282</p>
+                    <p>苗栗縣頭份市東民二街10號</h2>
+                </div>
+                <div class="store_right">
+                    <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
+                    <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
+                </div>
+            </div>
+            <div class="store_text middle">
+                <div class="store_left">
+                    <h2>苗栗 府前店</h2>
+                    <p>03-766222</p>
+                    <p>苗栗市府前路99號1樓</h2>
+                </div>
+                <div class="store_right">
+                    <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
+                    <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
+                </div>
+            </div>
+            <div class="store_text middle">
+                <div class="store_left">
+                    <h2>台中 文華店</h2>
+                    <p>04-2452166</p>
+                    <p>台中市西屯區文華路7-6號</h2>
+                </div>
+                <div class="store_right">
+                    <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
+                    <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
+                </div>
+            </div>
+            <div class="store_text middle">
+                <div class="store_left">
+                    <h2>台中 美村店</h2>
+                    <p>04-2320085</p>
+                    <p>台中市西區美村路一段97號</p>
+                </div>
+                <div class="store_right">
+                    <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
+                    <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
+                </div>
+            </div>
+            <div class="store_text middle">
+                <div class="store_left">
+                    <h2>台中 東海店</h2>
+                    <p>04-232085</p>
+                    <p>台中市龍井區新興路1巷1之1號</p>
+                </div>
+                <div class="store_right">
+                    <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
+                    <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
+                </div>
+            </div>
+            <div class="store_text middle">
+                <div class="store_left">
+                    <h2>台中 大智店</h2>
+                    <p>04-22223558</p>
+                    <p>台中市東區大智路1-2號</p>
+                </div>
+                <div class="store_right">
+                    <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
+                    <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
+                </div>
+            </div>
+            <div class="store_text middle">
+                <div class="store_left">
+                    <h2>台中 向上店</h2>
+                    <p>04-2301627</p>
+                    <p>台中市西區向上路一段223號</p>
+                </div>
+                <div class="store_right">
+                    <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
+                    <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
+                </div>
+            </div>
+            <div class="store_text middle">
+                <div class="store_left">
+                    <h2>台中 豐原店</h2>
+                    <p>04-2525795</p>
+                    <p>台中市豐原區中正路274號</p>
+                </div>
+                <div class="store_right">
+                    <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
+                    <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
+                </div>
+            </div>
+            <div class="store_text middle">
+                <div class="store_left">
+                    <h2>台中 水湳店</h2>
+                    <p>04-2295459</p>
+                    <p>台中市北屯區中清路二段246號</p>
+                </div>
+                <div class="store_right">
+                    <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
+                    <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
+                </div>
+            </div>
+            <div class="store_text middle">
+                <div class="store_left">
+                    <h2>台中 大里店</h2>
+                    <p>04-2483883</p>
+                    <p>台中市大里區中興路二段185號</p>
+                </div>
+                <div class="store_right">
+                    <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
+                    <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
+                </div>
+            </div>
+            <div class="store_text south">
+                <div class="store_left">
+                    <h2>台南 金華店</h2>
+                    <p>06-263808</p>
+                    <p>台南市南區金華路2段158號</p>
+                </div>
+                <div class="store_right">
+                    <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
+                    <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
+                </div>
+            </div>
+            <div class="store_text south">
+                <div class="store_left">
+                    <h2>台南 永康店</h2>
+                    <p>06-253045</p>
+                    <p>台南市永康區中正路537號</p>
+                </div>
+                <div class="store_right">
+                    <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
+                    <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
+                </div>
+            </div>
+            <div class="store_text south">
+                <div class="store_left">
+                    <h2>台南 永華店</h2>
+                    <p>06-220138</p>
+                    <p>台南市南區永華路一段27-6號</p>
+                </div>
+                <div class="store_right">
+                    <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
+                    <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
+                </div>
+            </div>
+            <div class="store_text south">
+                <div class="store_left">
+                    <h2>台南 青年店</h2>
+                    <p>06-222681</p>
+                    <p>台南市中西區青年路165號</p>
+                </div>
+                <div class="store_right">
+                    <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
+                    <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
+                </div>
+            </div>
+            <div class="store_text south">
+                <div class="store_left">
+                    <h2>高雄 崛江店</h2>
+                    <p>07-221680</p>
+                    <p>高雄市新興區新田路151號</p>
+                </div>
+                <div class="store_right">
+                    <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
+                    <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
+                </div>
+            </div>
+            <div class="store_text south">
+                <div class="store_left">
+                    <h2>高雄 楠梓店</h2>
+                    <p>07-364522</p>
+                    <p>高雄市楠梓區德賢路158號</p>
+                </div>
+                <div class="store_right">
+                    <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
+                    <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
+                </div>
+            </div>
+            <div class="store_text south">
+                <div class="store_left">
+                    <h2>高雄 瑞隆店</h2>
+                    <p>07-3831221</p>
+                    <p>高雄市前鎮區瑞隆路552號</p>
+                </div>
+                <div class="store_right">
+                    <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
+                    <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
+                </div>
+            </div>
+            <div class="store_text south">
+                <div class="store_left">
+                    <h2>高雄 五甲店</h2>
+                    <p>07-821752</p>
+                    <p>高雄市鳳山區五甲二路659號</p>
+                </div>
+                <div class="store_right">
+                    <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
+                    <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="about_footer">
+        <nav class="footer_nav">
+            <div class="footer_center">
+                <a class="footer_logo" href="./index.html">
+                    <img class="footer_nav_logo" src="./images/footer/footer-logo.png" alt="minute Tea-icon">
+                </a>
+                <div class="footer_boder"></div>
+                <ul class="footer_connect">
+                    <li>
+                        <p>電話 : 033836213</p>
+                    </li>
+                    <li>
+                        <p>傳真 : 886-4-23812576</p>
+                    </li>
+                    <li>
+                        <p>加盟/客服專線 : 0800-812213</p>
+                    </li>
+                    <li>
+                        <a href="mailto:h0989541162@gmail.com">地址 : 桃園市大園區菓林里17巷50-1號  / 聯絡我們 <i class="fa-solid fa-envelope"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_btm">
+                <p>本網站為緯育TibaMe前端工程師班第82期學員專題作品，<br>本平台僅供學習、展示之
+                    用。參考資源: 大苑子 、<br>五桐號、茶湯會、Q Buger、lkea 。</p>
+                <ul class="footer_nav_bar">
+                    <li><a href="./about.html">關於我們</a></li>
+                    <li><a href="./menu.html">推薦飲品</a></li>
+                    <li><a href="./news.html">最新消息</a></li>
+                    <li><a href="./store.html">門市資訊</a></li>
+                    <li><a href="./join-us.html">菁英招募</a></li>
+                    <li><a href="./chain.html">加盟資訊</a></li>
+                </ul>
+
+                <ul class="footer_nav_icons">
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
+                    <li><a href="https://line.me/zh-hant/" target="_blank"><i class="fa-brands fa-line"></i></a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
+
+    <!-- js主檔 -->
+    <script src="./javascript/store.js"></script>
+
+</body>
+</html>

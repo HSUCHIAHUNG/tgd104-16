@@ -1,0 +1,137 @@
+@import url(./common/reset.css);
+
+/* -----------menu btn------------- */
+#myBtnContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100vw;
+    height: 50px;
+}
+
+.btn {
+    font-weight: 600;
+    font-size: 1rem;
+    padding-left: 8px;
+    color: black;
+    border: none;
+    background-color: #fff;
+    line-height: 15px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.6s;
+}
+
+.btn h1{
+  font-weight: bold;  
+  padding-right: 8px;  
+  transition: 0.6s;
+}
+
+.btn h1::before{
+    content: "";
+    width: 0%;
+    height: 2px;
+    display: block;
+    position: absolute;
+    background: #ad9b6d;
+    bottom: -18px;
+    left: 8px;
+    transition: 0.6s;
+}
+
+.btn:hover h1{
+    color: #225876;
+    transition: 0.6s;
+}
+
+.btn:hover h1::before{
+    content: "";
+    width: 80%;
+    height: 2px;
+    display: block;
+    position: absolute;
+    background: #225876;
+    bottom: -18px;
+    left: 8px;
+    transition: 0.6s;
+}
+
+.btn:nth-child(1n+2){
+    border-left: 2px solid #D9D9D9;  
+    padding-left: 15px;
+}
+
+
+.main_nav_boder{
+    border-bottom:1px solid #D9D9D9;
+    margin: 0 auto;
+    height: 1px;
+    width: 85vw;
+}
+
+/* -----------menu content------------- */
+.menu_wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu_box_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 70vw;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 100px;
+}
+
+.column{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    display: none;
+}
+
+.column p{
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #225876;
+}
+
+.columnimg{
+    width:262px; 
+    height:227px;
+    overflow:hidden;
+}
+
+.columnimg img{
+    transform:scale(1,1);
+    transition: all .8s ease-out;
+}
+
+.columnimg img:hover{
+    transform:scale(1.2,1.2);
+}
+
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+    opacity: 0;
+    animation: topleft 1s ease .2s forwards;
+}
+
+@keyframes topleft{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
