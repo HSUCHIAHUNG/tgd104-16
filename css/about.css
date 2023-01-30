@@ -54,7 +54,7 @@
 
 /* 中間icon */
 .center_icon{
-    background-image: url(/images/about/icon-background.png);
+    background-image: url(../images/about/icon-background.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
