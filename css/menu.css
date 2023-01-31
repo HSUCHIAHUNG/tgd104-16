@@ -6,7 +6,8 @@
     align-items: center;
     justify-content: center;
     margin-top: 20px;
-    width: 100vw;
+    width: 100%;
+    min-width: 1200px;
     height: 50px;
 }
 
@@ -76,7 +77,8 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    
+    width: 100%;
+    min-width: 1200px;
 }
 
 .menu_box_wrapper{
@@ -85,6 +87,7 @@
     justify-content: flex-start;
     width: 65%;
     margin-top: 10px;
+    min-width: 1200px;
 
 }
 
@@ -95,7 +98,6 @@
     align-items: center;
     margin: 15px;
     display: none;
-    
 
 }
 
@@ -104,6 +106,7 @@
     text-align: center;
     font-weight: bold;
     color: #225876;
+    
 }
 
 .columnimg{
