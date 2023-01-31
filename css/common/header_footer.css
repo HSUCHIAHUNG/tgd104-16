@@ -2,7 +2,7 @@
 
 html{
     font-size: 62.5%;
-    overflow-x: hidden;
+
 }
 
 body{
@@ -10,11 +10,18 @@ body{
 }
 
 /* header navbar */
+.header_main{    
+    width: 100%;
+    display: flex;
+}
+
 .header_nav{
     display: flex;
     align-items: center;
+    justify-content: space-around;
     height: 100px;
-    justify-content: space-around; 
+    width: 100%;
+    min-width: 1200px;
 }
 
 .nav_logo{
@@ -25,6 +32,7 @@ body{
 .nav_bar{
     display: flex;
     margin-right: 80px;
+
 }
 
 .nav_bar li a{
@@ -34,10 +42,6 @@ body{
     display: block;
     text-decoration: none;
     color: #000;
-}
-
-.nav_bar li a:hover{
-    color: #215774;
 }
 
 .nav_icons{
@@ -50,9 +54,26 @@ body{
     font-size: 1.4rem;
 }
 
+/* nav hover */
+.nav_bar li a:hover{
+    color: #215774;
+}
+
+.nav_icons i:hover{
+    color: #215774;
+}
+
 /* footer */
 .about_footer{
+    width: 100%;
+    min-width: 1200px;
     border-top: 2px solid #83A0B1;
+}
+
+.footer_nav{
+
+    width: 100%;
+    min-width: 1200px;
 }
 
 .footer_center{
@@ -61,6 +82,8 @@ body{
     align-items: center;
     padding-top: 20px;
     margin-bottom: 40px;
+    width: 100%;
+    min-width: 1200px;
 }
 
 .footer_nav_logo{
@@ -70,7 +93,7 @@ body{
 }
 
 .footer_boder{
-    width: 600px;
+    min-width: 600px;
     border-bottom: 1px solid #83A0B1;
     margin-bottom: 20px;
     margin-left: 40px;
@@ -95,7 +118,6 @@ body{
 
 .footer_connect a{
     text-decoration: none;
-    
     color: #000;
 }
 
@@ -104,17 +126,20 @@ body{
     align-items: center;
     margin-bottom: 15px;
     justify-content: space-between; 
+    width: 100%;
+    min-width: 1200px;
 }
 
 .footer_btm p{
     font-size: 0.1rem;
     font-weight: bold;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .footer_nav_bar{
     display: flex;
     margin-right: 5px;
+    
 }
 
 .footer_nav_bar a{
@@ -135,4 +160,9 @@ body{
     padding-left: 20px;
     color: #83A0B1;
     font-size: 1.6rem;
+}
+
+/* hover */
+.footer_nav_icons i:hover{
+    color: #215774;
 }
