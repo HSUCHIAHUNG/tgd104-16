@@ -188,11 +188,14 @@ body{
 @media screen and (max-width:414px){
     .header_main{
         width: 100%;
+        min-height: 100vh;
         min-width: 414px;
+        
     }
 
     .header_nav{
         width: 100%;
+        min-height: 100vh;
         min-width: 414px;
     }
 
@@ -219,7 +222,7 @@ body{
         padding-left: 10px;
     }
 
-    .nav_bar,.nav_icons{
+    .nav_bar{
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
         transition: 1s;
     }
@@ -234,28 +237,45 @@ body{
         top: 80px;
         width: 100%;
         z-index: 10;
+        min-height: 100vh;
     }
 
     .nav_bar li{
         border-bottom: 2px solid #215774;
+        display: flex;
+        justify-content: center;
+        padding: 25px 30px 25px 0;
+
     }
 
     .nav_bar li a{
-        text-align: left;
         font-size: 1.5rem;
         color: white;
-        padding-top: 20px;
-        padding-bottom: 15px;
-        padding-left: 15px;
-        width: 100px;
     }
 
-    .nav_bar li:last-child a{
-        width: 200px;
-    }
+
 
     .nav_bar a span{
         color: #215774;
+    }
+
+    .nav_icons{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+        width: 100%;
+        min-width: 414px;
+        z-index: 10;
+        top: 650px;
+        padding-right: 15px;
+        
+    }
+
+    .nav_icons i{
+        color: #f8f8f8;
+        font-size: 1.4rem;
+        padding-left: 15px;
     }
 
     .nav_bar.active{
