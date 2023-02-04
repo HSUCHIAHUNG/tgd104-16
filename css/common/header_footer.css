@@ -188,21 +188,18 @@ body{
 @media screen and (max-width:414px){
     .header_main{
         width: 100%;
-        min-height: 100vh;
         min-width: 414px;
-        
     }
 
     .header_nav{
         width: 100%;
-        min-height: 100vh;
         min-width: 414px;
     }
 
     #menu_bar{
         display: initial;
         position: absolute;
-        font-size: 3.2rem;
+        font-size:3rem;
         right: 20px;
         top: 20px;
     }
@@ -217,12 +214,12 @@ body{
     }
 
     .nav_logo{
-        width: 240px;
+        width: 220px;
         padding-top: 15px;
         padding-left: 10px;
     }
 
-    .nav_bar{
+    .nav_bar,.nav_icons{
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
         transition: 1s;
     }
@@ -237,7 +234,6 @@ body{
         top: 80px;
         width: 100%;
         z-index: 10;
-        min-height: 100vh;
     }
 
     .nav_bar li{
@@ -253,8 +249,6 @@ body{
         color: white;
     }
 
-
-
     .nav_bar a span{
         color: #215774;
     }
@@ -269,7 +263,7 @@ body{
         z-index: 10;
         top: 650px;
         padding-right: 15px;
-        
+        transition: 1s;
     }
 
     .nav_icons i{
@@ -278,7 +272,10 @@ body{
         padding-left: 15px;
     }
 
-    .nav_bar.active{
+    .nav_bar.active,.nav_icons.active{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        min-height: 100vh;
+        opacity: 1;
+        
     }
 }
