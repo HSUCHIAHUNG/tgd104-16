@@ -188,19 +188,35 @@ body{
 @media screen and (max-width:414px){
     .header_main{
         width: 100%;
-        max-width: 414px;
+        min-width: 414px;
+    }
+
+    .header_nav{
+        width: 100%;
+        min-width: 414px;
+    }
+
+    #menu_bar{
+        display: initial;
+        position: absolute;
+        font-size: 3.2rem;
+        right: 20px;
+        top: 20px;
     }
 
     .header_nav{
         display: initial;
     }
 
-    #menu_bar{
-        display: initial;
-        position: absolute;
-        font-size: 3.5rem;
-        right: 20px;
-        top: 20px;
+    .nav_logo_a{
+        display: block;
+        width: 20px;
+    }
+
+    .nav_logo{
+        width: 240px;
+        padding-top: 15px;
+        padding-left: 10px;
     }
 
     .nav_bar,.nav_icons{
@@ -217,31 +233,29 @@ body{
         text-align: center;
         top: 80px;
         width: 100%;
-        z-index: 50;
+        z-index: 10;
     }
 
     .nav_bar li{
-        width: 100%;
         border-bottom: 2px solid #215774;
     }
 
     .nav_bar li a{
-        display: block;
         text-align: left;
-        max-width: 400px;
-        font-size: 2.5rem;
+        font-size: 1.5rem;
         color: white;
         padding-top: 20px;
         padding-bottom: 15px;
         padding-left: 15px;
+        width: 100px;
+    }
+
+    .nav_bar li:last-child a{
+        width: 200px;
     }
 
     .nav_bar a span{
         color: #215774;
-    }
-
-    .nav_icons{
-        display: block;
     }
 
     .nav_bar.active{
