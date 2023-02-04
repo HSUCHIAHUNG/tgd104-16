@@ -12,6 +12,8 @@ body{
 /* header navbar */
 .header_main{    
     width: 100%;
+    min-width: 1200px;
+    position: relative;
     display: flex;
 }
 
@@ -42,6 +44,15 @@ body{
     display: block;
     text-decoration: none;
     color: #000;
+}
+
+.nav_order{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav_order span{
+    color: #215774;
 }
 
 .nav_icons{
@@ -165,4 +176,75 @@ body{
 /* hover */
 .footer_nav_icons i:hover{
     color: #215774;
+}
+
+/* menu bar */
+#menu_bar{
+    display: none;
+} 
+
+/*-------------RWD---------------*/
+/* navbar */
+@media screen and (max-width:414px){
+    .header_main{
+        width: 100%;
+        max-width: 414px;
+    }
+
+    .header_nav{
+        display: initial;
+    }
+
+    #menu_bar{
+        display: initial;
+        position: absolute;
+        font-size: 3.5rem;
+        right: 20px;
+        top: 20px;
+    }
+
+    .nav_bar,.nav_icons{
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: 1s;
+    }
+
+    .nav_bar{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: #83A0B1;
+        border-top: 3px solid #215774;
+        text-align: center;
+        top: 80px;
+        width: 100%;
+        z-index: 50;
+    }
+
+    .nav_bar li{
+        width: 100%;
+        border-bottom: 2px solid #215774;
+    }
+
+    .nav_bar li a{
+        display: block;
+        text-align: left;
+        max-width: 400px;
+        font-size: 2.5rem;
+        color: white;
+        padding-top: 20px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+    }
+
+    .nav_bar a span{
+        color: #215774;
+    }
+
+    .nav_icons{
+        display: block;
+    }
+
+    .nav_bar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
 }
