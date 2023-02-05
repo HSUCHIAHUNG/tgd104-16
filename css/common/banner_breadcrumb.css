@@ -65,3 +65,38 @@
     padding: 5px;
     color: rgba(34, 88, 118, 1);
 }
+
+
+/*-------------banner & breadcrumb---------------*/
+@media screen and (max-width:414px){
+    .about_banner{
+        width: 100%;
+        min-width: 414px;
+    }
+
+    .breadcrumb{
+        min-width: 414px;
+    }
+
+    .breadcrumb a{
+        font-size: .5rem;
+        display: block;
+        width: 90px;
+    }
+
+    .about_banner_text h1{
+        font-size: .8rem;
+    }
+
+    .about_banner_text p{
+        font-size: .8rem;
+    }
+
+    .about_banner_text span:first-child::after{
+        font-size: .9rem;
+    }
+
+    .about_banner_text span:last-child::before{
+        font-size: .9rem;
+    }
+}

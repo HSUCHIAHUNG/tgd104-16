@@ -184,22 +184,24 @@ body{
 } 
 
 /*-------------RWD---------------*/
-/* navbar */
+/*-------------navbar---------------*/
 @media screen and (max-width:414px){
     .header_main{
         width: 100%;
         min-width: 414px;
+        z-index: 10;
     }
 
     .header_nav{
         width: 100%;
         min-width: 414px;
+        height: 70px;
     }
 
     #menu_bar{
         display: initial;
         position: absolute;
-        font-size:3rem;
+        font-size:2.5rem;
         right: 20px;
         top: 20px;
     }
@@ -214,7 +216,7 @@ body{
     }
 
     .nav_logo{
-        width: 220px;
+        width: 200px;
         padding-top: 15px;
         padding-left: 10px;
     }
@@ -231,9 +233,12 @@ body{
         background-color: #83A0B1;
         border-top: 3px solid #215774;
         text-align: center;
-        top: 80px;
-        width: 100%;
+        left: 0;
+        right: 0;
+        top: 70px;
+        margin-right: 0;
         z-index: 10;
+        overflow: hidden;
     }
 
     .nav_bar li{
@@ -241,7 +246,6 @@ body{
         display: flex;
         justify-content: center;
         padding: 25px 30px 25px 0;
-
     }
 
     .nav_bar li a{
@@ -264,6 +268,7 @@ body{
         top: 650px;
         padding-right: 15px;
         transition: 1s;
+        overflow: hidden;
     }
 
     .nav_icons i{
@@ -274,8 +279,9 @@ body{
 
     .nav_bar.active,.nav_icons.active{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-        min-height: 100vh;
-        opacity: 1;
-        
     }
+
+    .nav_bar.activeh{
+        height: 100vh;
+    } 
 }
