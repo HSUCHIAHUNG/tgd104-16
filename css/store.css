@@ -18,7 +18,6 @@
     padding-left: 8px;
     color: black;
     border: none;
-    background-color: #fff;
     line-height: 15px;
     cursor: pointer;
     position: relative;
@@ -70,7 +69,7 @@
     border-bottom:1px solid #D9D9D9;
     margin: 0 auto;
     height: 1px;
-    width: 85vw;
+    width: 85%;
 }
 
 
@@ -105,6 +104,7 @@
 .store_left{
     display: flex;
     padding: 10px;
+    align-items: center;
 }
 
 .store_left h1{
@@ -136,7 +136,12 @@
     justify-content: space-between;
     align-items: center;
     margin-right: 30px;
-    width: 94px;
+    width: 105px;
+    font-size: 1.1rem;
+}
+
+.store_right p{
+    margin-right: 5px;
 }
 
 .store_right a i{
@@ -148,6 +153,33 @@
     border: 2px solid #83A0B1;
     border-radius: 50%;
     padding: 3px;
+    transition: .8s;
+}
+
+.order_title{
+    margin-left: 255px;
+    line-height: 60px;
+    font-size: 1.1rem;
+    color: #225876;
+}
+
+.btn_modal{
+    border: 2px solid #225876;
+    color: #225876;
+    border-radius: 5px;
+    font-size: 1.1rem;
+  
+    padding: 5px;
+    margin-left: 90px;
+}
+
+.btn_modal i span{
+    font-weight: 600;
+}
+
+.btn_modal:hover{
+    background-color: #225876;
+    color: #fff;
     transition: .8s;
 }
 
@@ -171,5 +203,256 @@
     }
     100%{
         opacity: 1;
+    }
+}
+
+
+/* ----------訂購視窗------------ */
+/* ----------燈箱------------ */
+  button{
+    cursor: pointer;
+  }
+  #lightbox{
+  /*   border: 1px solid red; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 30;
+    background-color: hsla(0, 0%, 0%, .4);
+  }
+  
+  .none{
+    display: none;
+  }
+
+  /* ----------內容------------ */
+  article{
+    background-color: white;
+    width: 90%;
+    max-width: 414px;
+    border-radius: 5px;
+    box-shadow: 0 0 2px #ddd;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    bottom: 30px;
+    left: 0;
+    margin: auto;
+    z-index: 10;
+  }
+
+  .order_wrapper{
+    
+  }
+
+  .order_wrapper a{
+    position: sticky;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    box-shadow: 0px 0px 3px #000;
+    z-index: 2;
+  }
+
+  .order_wrapper a img{
+    width: 100px;
+    padding: 10px;
+  }
+
+
+/* -----------banner------------ */
+html,body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.index_Swiper {
+  width: 100%;
+  height: 20%;
+  min-width: 414px;
+}
+
+.swiper_wrapper{
+  width: 100%;
+  min-width: 414px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit:fill;
+}
+
+.banner_slide{
+  width: 100%;
+  min-width: 414px;
+}
+
+/* .arrow_right{
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  margin-right: 10px;
+  height: 25px;
+  font-size: 2.5rem;
+  z-index: 10;
+  color: #225876;
+  opacity: .7;
+}
+
+.arrow_left{
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  margin-left: 10px;
+  height: 25px;
+  font-size: 2.5rem;
+  z-index: 10;
+  color: #225876;
+  opacity: .7;
+}
+
+.arrow_right:hover{
+  opacity: 1;
+}
+
+.arrow_left:hover{
+  opacity: 1;
+} */
+
+  /* rwd */
+/*-----------store---------*/
+@media screen and (max-width:414px) {
+    #myBtnContainer{
+        position: relative;
+        top: 20px;
+        min-width: 414px;
+    }
+
+    .main_nav_boder{
+        height: 14px;
+        min-width: 414px;
+    }
+   
+    .store_content{
+        position: relative;
+
+        min-width: 414px;
+    }
+
+    .store_text{
+        min-width: 414px;
+    }
+
+    .store_text:first-child{
+        height: 50px;
+    }
+
+    .store_left h1:nth-child(1n+2){
+        display: none;
+    }
+
+    .store_left p{
+        padding-top: 10px;
+    }
+
+    .store_text h2{
+        padding-left: 0;
+    }
+
+    .store_right p:nth-child(1n+1){
+        display: none;
+    }
+
+    .store_left{
+        display: flex;
+        flex-wrap: wrap;
+        width: 140px;
+    }
+
+    .store_left p{
+        font-size: 1rem;
+    }
+
+    .store_right{
+        margin-right: 5px;
+        height: 102px;
+        width: 90px;
+    }
+    
+    .store_right a i{
+        font-size: 1rem;
+    }
+
+/*-----------store content---------*/
+    
+
+/*-----------線上訂購---------*/
+    #lightbox{
+        position: static;
+        min-width: 414px;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+    }
+
+    article{
+        background-color: white;
+        min-width: 414px;
+        border-radius: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        margin: 0;
+        z-index: 10;
+    }
+      
+    .order_title{
+        display: none;
+    }
+
+    .btn_modal{
+        margin: 0;
+        margin-top: 30px;
+        height: 40px;
     }
 }

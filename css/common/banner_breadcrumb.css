@@ -70,12 +70,17 @@
 /*-------------banner & breadcrumb---------------*/
 @media screen and (max-width:414px){
     .about_banner{
+        position: relative;
+        top: 50px;
         width: 100%;
         min-width: 414px;
     }
 
     .breadcrumb{
         min-width: 414px;
+        box-sizing: border-box;
+        padding-left: 4px;
+        padding-top: 8px;
     }
 
     .breadcrumb a{
