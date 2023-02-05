@@ -409,6 +409,8 @@ body {
 
     .store_left p{
         font-size: 1rem;
+        color: #000;
+        text-decoration: none;
     }
 
     .store_right{
