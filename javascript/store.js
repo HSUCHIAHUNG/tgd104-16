@@ -5,19 +5,22 @@ var swiper = new Swiper(".index_Swiper", {
   delay: 2500,
   disableOnInteraction: false,
   },
-  navigation: {
+/*   navigation: {
       nextEl: ".arrow_right",
       prevEl: ".arrow_left",
-  },
+  }, */
 });
 
 
 // 頁面上的按鈕
 let lightbox_el = document.getElementById("lightbox");
-let btn_modal = document.getElementsByClassName("btn_modal")[0];
-btn_modal.addEventListener("click", function(){
+let btn_modal = document.getElementsByClassName("btn_modal");
+
+for(let i = 0; i < btn_modal.length; i++){
+btn_modal[i].addEventListener("click", function(){
   lightbox_el.classList.remove("none");
-});
+  });
+}
 
 
 let btn_modal_close = document.getElementsByClassName("btn_modal_close")[0];
@@ -34,10 +37,6 @@ lightbox_el.addEventListener("click", function(){
 lightbox_el.querySelector("article").addEventListener("click", function(e){
   e.stopPropagation();
 });
-
-
-
-
 
 
 /* PC fi */
