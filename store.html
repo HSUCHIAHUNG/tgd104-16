@@ -32,8 +32,15 @@
                 <li><a href="./menu.html">推薦飲品</a></li>
                 <li><a href="./news.html">最新消息</a></li>
                 <li><a href="./store.html">門市資訊</a></li>
-                <li><a href="./join-us.html">菁英招募</a></li>
-                <li><a href="./chain.html">加盟資訊</a></li>
+                <li class="dropdown">
+                    <button class="dropdown_btn" type="button">加入我們
+                        <i class="fa-solid fa-caret-down"></i>
+                    </button> 
+                    <ol>
+                        <li><a href="./join-us.html">菁英招募</a></li>
+                        <li><a href="./chain.html">加盟資訊</a></li>
+                    </ol>
+                </li>
                 <li><a href="./store.html"><span>門市資訊/線上點餐</span></a></li>
             </ul>
             <ul class="nav_icons">
@@ -60,7 +67,7 @@
     </section>
 
     <!-- menu btn -->
-    <div id="myBtnContainer">
+    <!-- <div id="myBtnContainer">
         <button class="btn" onclick="filterSelection('north')">
             <h1>北部</h1> 
         </button>
@@ -74,10 +81,10 @@
             <h1>所有據點</h1> 
         </button>
     </div>
-    <div class="main_nav_boder"></div> 
+    <div class="main_nav_boder"></div>  -->
 
     <!-- store content -->
-    <section> 
+    <!-- <section> 
         <div class="store_content">
             <div class="store_text north middle south">
                 <div class="store_left">
@@ -85,8 +92,8 @@
                     <h1>電話</h1>
                     <h1>地址</h1>
                 </div>
-                <h1 class="order_title">線上訂購</h1>
                 <div class="store_right north middle south">
+                    <h1 class="order_title">線上訂購</h1>
                     <p>撥號</p>
                     <p>導航</p>
                 </div>
@@ -97,8 +104,8 @@
                     <p>02-270903</p>
                     <p>台北市大安區通化街121號</p>
                 </div>
-                <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                 <div class="store_right">
+                    <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                     <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
                     <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
                 </div>
@@ -109,8 +116,8 @@
                     <p>02-239555</p>
                     <p>台北市松山區八德路四段73號</p>
                 </div>
-                <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                 <div class="store_right">
+                    <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                     <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
                     <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
                 </div>
@@ -120,9 +127,9 @@
                     <h2>台北 公館店</h2>
                     <p>02-259318</p>
                     <p>台北市士林區德行西路154號</p>
-                </div>
-                <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
+                </div>               
                 <div class="store_right">
+                    <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                     <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
                     <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
                 </div>
@@ -132,9 +139,9 @@
                     <h2>台北 芝山店</h2>
                     <p>02-223566</p>
                     <p>台北市內湖區東湖路23號</p>
-                </div>
-                <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
+                </div>               
                 <div class="store_right">
+                    <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                     <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
                     <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
                 </div>
@@ -145,8 +152,8 @@
                     <p>02-269173</p>
                     <p>台北市羅斯福路3段16巷5-1號</p>
                 </div>
-                <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                 <div class="store_right">
+                    <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                     <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
                     <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
                 </div>
@@ -157,8 +164,8 @@
                     <p>02-260900</p>
                     <p>台北市文山區景文街14號</p>
                 </div>
-                <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                 <div class="store_right">
+                    <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                     <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
                     <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
                 </div>
@@ -169,8 +176,8 @@
                     <p>02-249050</p>
                     <p>桃園市桃園區中正路53號</p>
                 </div>
-                <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                 <div class="store_right">
+                    <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                     <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
                     <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
                 </div>
@@ -181,8 +188,8 @@
                     <p>02-209500</p>
                     <p>桃園市桃園區中正路83號</p>
                 </div>
-                <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                 <div class="store_right">
+                    <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                     <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
                     <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
                 </div>
@@ -193,8 +200,8 @@
                     <p>02-253158</p>
                     <p>桃園市蘆竹區大竹路42號1樓</p>
                 </div>
-                <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                 <div class="store_right">
+                    <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                     <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
                     <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
                 </div>
@@ -205,8 +212,8 @@
                     <p>02-259158</p>
                     <p>桃園市桃園區中正路147號</p>
                 </div>
-                <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                 <div class="store_right">
+                    <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                     <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
                     <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
                 </div>
@@ -217,8 +224,8 @@
                     <p>02-239358</p>
                     <p>新竹市北區光華街12-1號一樓</p>
                 </div>
-                <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                 <div class="store_right">
+                    <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                     <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
                     <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
                 </div>
@@ -229,8 +236,8 @@
                     <p>02-289158</p>
                     <p>新竹市食品路12號</p>
                 </div>
-                <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                 <div class="store_right">
+                    <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                     <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
                     <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
                 </div>
@@ -241,8 +248,8 @@
                     <p>02-269158</p>
                     <p>基隆市仁愛區仁三路178號</h2>
                 </div>
-                <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                 <div class="store_right">
+                    <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                     <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
                     <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
                 </div>
@@ -253,8 +260,8 @@
                     <p>03-762282</p>
                     <p>苗栗縣頭份市東民二街10號</h2>
                 </div>
-                <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                 <div class="store_right">
+                    <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                     <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
                     <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
                 </div>
@@ -265,8 +272,8 @@
                     <p>03-766222</p>
                     <p>苗栗市府前路99號1樓</h2>
                 </div>
-                <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                 <div class="store_right">
+                    <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                     <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
                     <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
                 </div>
@@ -277,8 +284,8 @@
                     <p>04-2452166</p>
                     <p>台中市西屯區文華路7-6號</h2>
                 </div>
-                <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                 <div class="store_right">
+                    <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                     <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
                     <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
                 </div>
@@ -289,8 +296,8 @@
                     <p>04-2320085</p>
                     <p>台中市西區美村路一段97號</p>
                 </div>
-                <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                 <div class="store_right">
+                    <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                     <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
                     <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
                 </div>
@@ -301,8 +308,8 @@
                     <p>04-232085</p>
                     <p>台中市龍井區新興路1巷1之1號</p>
                 </div>
-                <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                 <div class="store_right">
+                    <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                     <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
                     <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
                 </div>
@@ -313,8 +320,8 @@
                     <p>04-22223558</p>
                     <p>台中市東區大智路1-2號</p>
                 </div>
-                <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                 <div class="store_right">
+                    <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                     <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
                     <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
                 </div>
@@ -325,8 +332,8 @@
                     <p>04-2301627</p>
                     <p>台中市西區向上路一段223號</p>
                 </div>
-                <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                 <div class="store_right">
+                    <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                     <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
                     <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
                 </div>
@@ -337,8 +344,8 @@
                     <p>04-2525795</p>
                     <p>台中市豐原區中正路274號</p>
                 </div>
-                <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                 <div class="store_right">
+                    <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                     <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
                     <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
                 </div>
@@ -349,8 +356,8 @@
                     <p>04-2295459</p>
                     <p>台中市北屯區中清路二段246號</p>
                 </div>
-                <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                 <div class="store_right">
+                    <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                     <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
                     <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
                 </div>
@@ -361,8 +368,8 @@
                     <p>04-2483883</p>
                     <p>台中市大里區中興路二段185號</p>
                 </div>
-                <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                 <div class="store_right">
+                    <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                     <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
                     <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
                 </div>
@@ -373,8 +380,8 @@
                     <p>06-263808</p>
                     <p>台南市南區金華路2段158號</p>
                 </div>
-                <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                 <div class="store_right">
+                    <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                     <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
                     <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
                 </div>
@@ -385,8 +392,8 @@
                     <p>06-253045</p>
                     <p>台南市永康區中正路537號</p>
                 </div>
-                <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                 <div class="store_right">
+                    <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                     <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
                     <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
                 </div>
@@ -397,8 +404,8 @@
                     <p>06-220138</p>
                     <p>台南市南區永華路一段27-6號</p>
                 </div>
-                <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                 <div class="store_right">
+                    <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                     <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
                     <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
                 </div>
@@ -409,8 +416,8 @@
                     <p>06-222681</p>
                     <p>台南市中西區青年路165號</p>
                 </div>
-                <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                 <div class="store_right">
+                    <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                     <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
                     <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
                 </div>
@@ -421,8 +428,8 @@
                     <p>07-221680</p>
                     <p>高雄市新興區新田路151號</p>
                 </div>
-                <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                 <div class="store_right">
+                    <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                     <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
                     <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
                 </div>
@@ -433,8 +440,8 @@
                     <p>07-364522</p>
                     <p>高雄市楠梓區德賢路158號</p>
                 </div>
-                <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                 <div class="store_right">
+                    <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                     <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
                     <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
                 </div>
@@ -445,8 +452,8 @@
                     <p>07-3831221</p>
                     <p>高雄市前鎮區瑞隆路552號</p>
                 </div>
-                <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                 <div class="store_right">
+                    <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                     <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
                     <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
                 </div>
@@ -457,43 +464,14 @@
                     <p>07-821752</p>
                     <p>高雄市鳳山區五甲二路659號</p>
                 </div>
-                <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                 <div class="store_right">
+                    <button type="button" class="btn_modal"><i class="fa-brands fa-envira"><span>立即訂購</span></i></button>
                     <a href="tel:0989541162" target="_blank"><i class="fa-solid fa-phone"></i></a>
                     <a href="https://www.google.com.tw/maps/place/%E7%B7%AF%E8%82%B2TibaMe%E9%99%84%E8%A8%AD%E5%8F%B0%E5%8C%97%E8%81%B7%E8%A8%93%E4%B8%AD%E5%BF%83/@25.052128,121.5410589,17z/data=!3m2!4b1!5s0x3442abddfc0bc85f:0x547998e4a2421286!4m5!3m4!1s0x3442abe6b0446815:0xf006dde8c27afcc7!8m2!3d25.052128!4d121.5432529?hl=zh-TW" target="_blank"><i class="fa-solid fa-location-dot"></i></a> 
                 </div>
             </div>
         </div>
-    </section> 
-    <!-- 燈箱order -->
-    
-    <div id="lightbox" class="none">
-        <article class="order_wrapper">
-            <a href="#"><img src="./images/header/header-icon.png" alt="重選門市"></a>
-            <div class="swiper index_Swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide banner_slide">
-                        <img src="./images/index/banner01.png" alt="about_banner">
-                    </div>
-                    <div class="swiper-slide banner_slide">
-                        <img src="./images/index/banner02.png" alt="about_banner">
-                    </div>
-                    <div class="swiper-slide banner_slide">
-                         <img src="./images/index/banner03.png" alt="about_banner">
-                    </div>
-                    <div class="swiper-slide banner_slide">
-                        <img src="./images/index/banner04.png" alt="about_banner">
-                    </div>
-                    <div class="swiper-slide banner_slide">
-                        <img src="./images/index/banner05.png" alt="about_banner">
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
-                <div class="arrow_right"><i class="fa-solid fa-square-caret-right"></i></div>
-                <div class="arrow_left"><i class="fa-solid fa-square-caret-left"></i></div> 
-            </div>
-            <button type="button" class="btn_modal_close">關閉</button>
-        </article> 
+    </section>  -->
 
     <!-- footer -->
     <!-- <footer class="about_footer">
@@ -540,7 +518,64 @@
         </nav>
     </footer> -->
 
+    <!-- 燈箱order -->
+        <!-- <div id="lightbox" class="none">
+    <article class="order_wrapper">
+        <a href="#"><img src="./images/header/header-icon.png" alt="重選門市"></a>
+        <div class="swiper index_Swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide banner_slide">
+                    <img src="./images/index/banner01.png" alt="about_banner">
+                </div>
+                <div class="swiper-slide banner_slide">
+                    <img src="./images/index/banner02.png" alt="about_banner">
+                </div>
+                <div class="swiper-slide banner_slide">
+                    <img src="./images/index/banner03.png" alt="about_banner">
+                </div>
+                <div class="swiper-slide banner_slide">
+                    <img src="./images/index/banner04.png" alt="about_banner">
+                </div>
+                <div class="swiper-slide banner_slide">
+                    <img src="./images/index/banner05.png" alt="about_banner">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="arrow_right"><i class="fa-solid fa-square-caret-right"></i></div>
+            <div class="arrow_left"><i class="fa-solid fa-square-caret-left"></i></div> 
+        </div>
+        <div class="lightbox_top_wrapper">
+            <img src="./images/store/store.logo.png" alt="logo">
+            <div class="lightbox_top">
+                <h1>minute 南崁店</h1>
+                <p>店家資訊</p>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <p>4.9(303)</p>
+                </div>
+            </div>        
+            <button type="button" class="lightbox_top_btn"><i class="fa-solid fa-chevron-down"><span>更多</span></i></button>
+        </div>
 
+        <div class="lightbox_scroll">
+            <button type="button" class="lightbox_scroll_btn"><span>曾經點過</span></button>
+            <button type="button" class="lightbox_scroll_btn"><span>冬季新品</span></button>
+            <button type="button" class="lightbox_scroll_btn"><span>梅果系列</span></button>
+            <button type="button" class="lightbox_scroll_btn"><span>新品專區</span></button>
+            <button type="button" class="lightbox_scroll_btn"><span>香濃燕麥</span></button>
+            <button type="button" class="lightbox_scroll_btn"><span>精選推薦</span></button>
+            <button type="button" class="lightbox_scroll_btn"><span>醇香茶品</span></button>
+            <button type="button" class="lightbox_scroll_btn"><span>香濃奶茶</span></button>
+            <button type="button" class="lightbox_scroll_btn"><span>濃醇鮮乳</span></button>
+            <button type="button" class="lightbox_scroll_btn"><span>鮮條果茶</span></button>
+            <button type="button" class="lightbox_scroll_btn"><span>冰沙</span></button>
+        </div>
+    </article>  
+        <button type="button" class="btn_modal_close">關閉</button> -->
 
     <!-- swiper.js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>

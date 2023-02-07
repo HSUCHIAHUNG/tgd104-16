@@ -68,7 +68,7 @@
 
 
 /*-------------banner & breadcrumb---------------*/
-@media screen and (max-width:414px){
+@media screen and (max-width:428px){
     .about_banner{
         position: relative;
         top: 50px;
