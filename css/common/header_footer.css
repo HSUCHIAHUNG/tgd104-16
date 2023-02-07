@@ -30,8 +30,7 @@ body{
 }
 
 .nav_logo_a{
-    display: flex;
-    align-items: center;
+    margin-top: 25px;
 }
 
 .nav_bar{
@@ -265,6 +264,8 @@ ol li a{
     .nav_logo_a{
         display: block;
         width: 20px;
+        margin-top: 0px;
+        margin-bottom: 10px;
     }
 
     .nav_logo{
@@ -288,7 +289,7 @@ ol li a{
         text-align: center;
         left: 0;
         right: 0;
-        top: 55px;
+        top: 60px;
         bottom: 0;
         margin-right: 0;
         z-index: 10;
