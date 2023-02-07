@@ -238,6 +238,7 @@ ol li a{
         width: 100%;
         min-width: 414px;
         z-index: 10;
+        
     }
 
     .header_nav{
@@ -275,7 +276,7 @@ ol li a{
     }
 
     .nav_bar{
-        position: fixed;
+        position: absolute;
         display: flex;
         flex-direction: column;
         justify-content: initial;
@@ -285,10 +286,10 @@ ol li a{
         left: 0;
         right: 0;
         top: 62px;
-        bottom: 0;
         margin-right: 0;
         z-index: 10;
-        overflow: hidden;
+
+        height: 100vh;
     }
 
     .nav_bar li{
