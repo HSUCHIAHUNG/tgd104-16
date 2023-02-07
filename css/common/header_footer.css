@@ -2,11 +2,10 @@
 
 html{
     font-size: 62.5%;
-
+    background-color: #ffffff;
 }
 
 body{
-    
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
@@ -15,7 +14,7 @@ body{
     width: 100%;
     min-width: 1200px;
     background-color: #ffffff;
-    overflow: hidden;
+ 
 }
 
 .header_nav{
@@ -117,6 +116,10 @@ ol li a{
 }
 
 .nav_icons i:hover{
+    color: #215774;
+}
+
+.dropdown_btn:hover{
     color: #215774;
 }
 
@@ -238,13 +241,17 @@ ol li a{
         width: 100%;
         min-width: 414px;
         z-index: 10;
-        
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 50;
     }
 
     .header_nav{
         width: 100%;
         min-width: 414px;
-        height: 70px;
+        display: initial;
+        
     }
 
     #menu_bar{
@@ -253,10 +260,6 @@ ol li a{
         font-size:2.5rem;
         right: 20px;
         top: 20px;
-    }
-
-    .header_nav{
-        display: initial;
     }
 
     .nav_logo_a{
@@ -276,7 +279,7 @@ ol li a{
     }
 
     .nav_bar{
-        position: absolute;
+        position: fixed;
         display: flex;
         flex-direction: column;
         justify-content: initial;
@@ -285,11 +288,10 @@ ol li a{
         text-align: center;
         left: 0;
         right: 0;
-        top: 62px;
+        top: 55px;
+        bottom: 0;
         margin-right: 0;
         z-index: 10;
-
-        height: 100vh;
     }
 
     .nav_bar li{
@@ -363,6 +365,59 @@ ol li a{
 
     .nav_bar.active{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+/*-------------footer---------------*/
+    .about_footer{
+        min-width: 428px;
+    }
+
+    .footer_nav{
+        min-width: 428px;
+    }
+
+    .footer_center{
+        min-width: 428px;
+    }
+
+    .footer_boder{
+        min-width: 250px;
+        margin-left: 0;
+    }
+
+    .footer_connect{
+        min-width: 428px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer_connect li{
+        padding-left: 0;
+    }
+
+    .footer_btm{
+        min-width: 428px;
+    }
+
+    .footer_nav_bar{
+        display: none;
+    }
+    
+    .footer_btm p{
+        display: none;
+    }
+
+    .footer_nav_icons{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 10px;
+        justify-content: center;
+    }
+
+    .footer_nav_icons li{
+        padding-right: 10px;
     }
 
 }

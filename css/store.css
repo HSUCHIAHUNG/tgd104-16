@@ -1,16 +1,22 @@
 @import url(./common/reset.css);
 
+body{
+    background-color: #ffffff;
+}
+
+
+
 /* 上方導覽列 */
 /* -----------store btn------------- */
 #myBtnContainer {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
+    padding-top: 20px;
     width: 100%;
     min-width: 1200px;
     height: 50px;
-    
+    background-color: #ffffff;
 }
 
 .btn {
@@ -24,11 +30,13 @@
     position: relative;
     transition: 0.4s;
     width: 100px;
+    background-color: #ffffff;
 }
 
 .btn h1{
   font-weight: bold;  
   transition: 0.6s;
+  
 }
 
 .btn h1::before{
@@ -67,11 +75,11 @@
 
 
 .main_nav_boder{
-    border-bottom:1px solid #D9D9D9;
+    outline: 1px solid #e0dfdf;
     margin: 0 auto;
-    height: 1px;
     width: 85%;
     min-width: 1200px;
+    
 }
 
 
@@ -83,6 +91,7 @@
     width: 100%;
     min-width: 1200px;
     margin-bottom: 80px;
+    background-color: #ffffff;
 }
 
 .store_text{
@@ -142,11 +151,11 @@
 }
 
 .store_right p{
-    margin-right: 23px;
+    margin-left: 23px;
 }
 
 .store_right a {
-    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .store_right a i{
@@ -162,7 +171,7 @@
 }
 
 .order_title{
-    margin-right: 60px;
+    margin-right: 50px;
     line-height: 60px;
     font-size: 1.1rem;
     color: #225876;
@@ -176,6 +185,7 @@
     padding: 5px;
     width: 120px;
     margin-right: 20px;
+    background-color: #ffffff;
 }
 
 .btn_modal i span{
@@ -428,12 +438,10 @@ body {
 @media screen and (max-width:428px) {
     #myBtnContainer{
         position: relative;
-        top: 20px;
         min-width: 414px;
     }
 
     .main_nav_boder{
-        height: 14px;
         min-width: 414px;
     }
    
@@ -445,6 +453,7 @@ body {
 
     .store_text{
         min-width: 414px;
+        
     }
 
     .store_text:first-child{
@@ -480,9 +489,14 @@ body {
     }
 
     .store_right{
-        margin-right: 5px;
         height: 102px;
-        width: 90px;
+        margin-right: 0;
+    }
+
+    .store_right a{
+        margin-top: 30px;
+        margin-right: 0;
+        
     }
     
     .store_right a i{
@@ -521,6 +535,7 @@ body {
     .btn_modal{
         margin: 0;
         margin-top: 30px;
+        margin-left: 15px;
         height: 40px;
     }
 }
