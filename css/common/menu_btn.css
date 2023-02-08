@@ -1,0 +1,54 @@
+#myBtnContainer {
+  line-height: 50px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 20px;
+  min-width: 1200px;
+    width: 100%;
+}
+
+.btn {
+  font-weight: bold;
+  font-size: 1rem;
+  padding-left: 8px;
+  color: black;
+  border: none;
+  background-color: #ffffff;
+  line-height: 15px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.6s;
+  width: 100px;
+}
+
+.btn h1{
+font-weight: bold;  
+padding-right: 8px;  
+transition: 0.6s;
+}
+
+.btn h1::before{
+  content: "";
+  width: 0%;
+  height: 2px;
+  position: absolute;
+  bottom: -18px;
+  left: 8px;
+  transition: 0.6s;
+}
+
+.btn:hover h1{
+  color: #225876;
+  transition: 0.6s;
+}
+
+.btn:hover h1::before{
+  width: 80%;
+  background: #225876;
+  transition: 0.6s;
+}
+
+.btn.btn:nth-child(1n+2){
+  border-left: 2px solid #D9D9D9;  
+  padding-left: 15px;
+}

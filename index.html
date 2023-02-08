@@ -24,17 +24,25 @@
 <body>
     <!-- header navbar -->
     <header class="header_main">
+        <div id="menu_bar" class="fas fa-bars"></div>
         <nav class="header_nav">
-            <a href="./index.html">
+            <a href="./index.html" class="nav_logo_a">
                 <img class="nav_logo" src="./images/header/header-icon.png" alt="minute Tea-icon">
             </a>
             <ul class="nav_bar">
                 <li><a href="./about.html">關於我們</a></li>
                 <li><a href="./menu.html">推薦飲品</a></li>
                 <li><a href="./news.html">最新消息</a></li>
-                <li><a href="./store.html">門市資訊</a></li>
-                <li><a href="./join-us.html">菁英招募</a></li>
-                <li><a href="./chain.html">加盟資訊</a></li>
+                <li class="dropdown">
+                    <button class="dropdown_btn" type="button">加入我們
+                        <i class="fa-solid fa-caret-down"></i>
+                    </button> 
+                    <ol>
+                        <li><a href="./join-us.html">菁英招募</a></li>
+                        <li><a href="./chain.html">加盟資訊</a></li>
+                    </ol>
+                </li>
+                <li><a href="./store.html"><span>門市資訊/線上點餐</span></a></li>
             </ul>
             <ul class="nav_icons">
                 <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
@@ -724,6 +732,7 @@
 
     <!-- swiper.js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./javascript/common-js/nav.js"></script>
     <script src="./javascript/index.js"></script>
 
 </body>

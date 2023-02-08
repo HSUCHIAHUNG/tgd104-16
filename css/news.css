@@ -1,80 +1,11 @@
 @import url(./common/reset.css);
 
-/* -----------menu btn------------- */
-#myBtnContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    width: 100%;
-    min-width: 1200px;
-    height: 50px;
-}
-
-.btn {
-    font-weight: 600;
-    font-size: 1rem;
-    padding-left: 8px;
-    color: black;
-    border: none;
-    background-color: #fff;
-    line-height: 15px;
-    cursor: pointer;
-    position: relative;
-}
-
-.btn h1{
-  font-weight: bold;  
-  padding-right: 8px;  
-  transition: 0.6s;
-}
-
-.btn h1::before{
-    content: "";
-    width: 0%;
-    height: 2px;
-    display: block;
-    position: absolute;
-    background: #ad9b6d;
-    bottom: -17px;
-    left: 8px;
-    transition: 0.6s;
-}
-
-.btn:hover h1{
-    color: #225876;
-    transition: 0.6s;
-}
-
-.btn:hover h1::before{
-    content: "";
-    width: 80%;
-    height: 2px;
-    display: block;
-    position: absolute;
-    background: #225876;
-    bottom: -17px;
-    left: 8px;
-    transition: 0.6s;
-}
-
-.btn:nth-child(1n+2){
-    border-left: 2px solid #D9D9D9;  
-}
-
-
-.main_nav_boder{
-    border-bottom:1px solid #D9D9D9;
-    margin: 0 auto;
-    width: 85vw;
-}
-
 /* 下方box主要內容 */
 .news_wrapper{
     display: flex;
-    justify-content: center;
+    margin: 0 auto;
+    max-width: 1420px;
     width: 100%;
-    min-width: 1200px;
 }
 
 .news_content_wrapper{
@@ -82,9 +13,8 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 100px;
-    margin-top: 30px;
+    max-width: 1420px;
     width: 100%;
-    min-width: 1200px;
 }
 
 .news_content{
@@ -94,19 +24,19 @@
     border: 1px solid #2F528F;
     display: none;
     transition: .8s;
-    width: 200px;
-    min-width: 600px;
+    max-width: 550px;
 }
 
 .news_content img{
     display: block;
-    min-width: 230px;
+    max-width: 230px;
+    width: 100%;
 }
 
 .news_content_text{
     padding-left: 30px;
     width: 100%;
-    min-width: 1200px;
+
 }
 
 .news_content_text h1{
@@ -130,7 +60,6 @@
 
 .news_content_text a{
     text-decoration: none;
-    display: block;
     transition: .8s;
 }
 
@@ -141,7 +70,6 @@
 
 .news_content_text i{
     padding-left: 20px;
-    
 }
 
 .min_box{
@@ -195,4 +123,22 @@
     100%{
         opacity: 1;
     }
+}
+
+
+
+@media screen and (max-width:428px) {
+    #myBtnContainer{
+        padding-top: 50px;
+        min-width: 428px;
+    }
+
+    .main_nav_boder{
+        min-width: 428px;
+    }
+
+    .news_wrapper{
+        min-width: 428px;
+    }
+
 }
