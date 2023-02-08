@@ -87,13 +87,12 @@ body{
         position: relative;
         top: 75px;
         width: 100%;
-        min-width: 428px;
+        min-width: auto;
         z-index: 10;
     }
 
     .breadcrumb{
-        min-width: 414px;
-        padding-left: 4px;
+        min-width: auto;
         padding-top: 20px;
         outline: 0;
     }
