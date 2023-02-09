@@ -13,7 +13,7 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 100px;
-    max-width: 1420px;
+    min-width: 1200px;
     width: 100%;
 }
 
@@ -24,7 +24,7 @@
     border: 1px solid #2F528F;
     display: none;
     transition: .8s;
-    max-width: 550px;
+    min-width: 550px;
 }
 
 .news_content img{

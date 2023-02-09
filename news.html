@@ -66,15 +66,21 @@
 
     <!-- news btn -->
     <div id="myBtnContainer">
-        <button class="btn active" onclick="filterSelection('newopen')">
-        <h1>門市開幕</h1> 
+        <button class="filter_btn_title">
+            <h1>所有據點</h1>
+            <i class="fa-solid fa-chevron-down"></i>
         </button>
-        <button class="btn" onclick="filterSelection('discount')">
-        <h1>優惠活動</h1> 
-        </button>
-        <button class="btn" onclick="filterSelection('all')">
-        <h1>所有訊息</h1> 
-        </button>
+        <div class="filter_btn">
+            <button class="btn active" onclick="filterSelection('newopen')">
+            <h1>門市開幕</h1> 
+            </button>
+            <button class="btn" onclick="filterSelection('discount')">
+            <h1>優惠活動</h1> 
+            </button>
+            <button class="btn" onclick="filterSelection('all')">
+            <h1>所有訊息</h1> 
+            </button>
+        </div>
     </div>
     <div class="breadcrumb"></div>    
 
