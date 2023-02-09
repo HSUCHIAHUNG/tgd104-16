@@ -52,7 +52,7 @@ transition: 0.6s;
   transition: 0.6s;
 }
 
-.btn.btn:nth-child(1n+2){
+.btn:nth-child(1n+2){
   border-left: 2px solid #D9D9D9;  
   padding-left: 15px;
 }

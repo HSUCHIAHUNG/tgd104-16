@@ -67,7 +67,7 @@ body{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-right: 30px;
+    margin-right: 16px;
     max-width: 1420px;
     width: 100%;
     font-size: 1.1rem;
@@ -126,6 +126,7 @@ body{
     color: #fff;
     transition: .8s;
 }
+
 
 
 /* The "show" class is added to the filtered elements */

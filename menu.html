@@ -14,10 +14,11 @@
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- css主檔 -->
-    <link rel="stylesheet" href="./css/common/header_footer.css">
     <link rel="stylesheet" href="./css/common/banner_breadcrumb.css">
     <link rel="stylesheet" href="./css/common/menu_btn.css">
+    <link rel="stylesheet" href="./css/common/header_footer.css">
     <link rel="stylesheet" href="./css/menu.css">
+    
     
 
 </head>
@@ -67,12 +68,19 @@
 
     <!-- menu btn -->
         <div id="myBtnContainer">
-          <button class="btn" onclick="filterSelection('nature')">
-          <h1>經典飲品</h1> 
+          <button class="filter_btn_title">
+            <h1>所有據點</h1>
+            <i class="fa-solid fa-chevron-down"></i>
           </button>
-          <button class="btn" onclick="filterSelection('special')">
-          <h1>限定飲品</h1> 
-          </button>
+          <div class="filter_btn">
+            <button class="btn" onclick="filterSelection('nature')">
+            <p>經典飲品</p> 
+            </button>
+            <button class="btn" onclick="filterSelection('special')">
+            <p>限定飲品</p> 
+            </button>
+          </div>
+
         </div>
         <div class="breadcrumb"></div>  
     
@@ -251,11 +259,15 @@
     </footer>
 
 
-    <!-- js主檔 -->
-    <script src="./javascript/common-js/nav.js"></script>
-    <script src="./javascript/menu.js"></script>
+  
     <!-- AOS.JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
+
+      <!-- js主檔 -->
+      <script src="./javascript/menu.js"></script>
+      <script src="./javascript/header_footer.js"></script>
+      <script src="./javascript/common-js/nav.js"></script>
+
 </body>
 </html>
