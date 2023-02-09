@@ -7,6 +7,10 @@
     width: 100%;
 }
 
+.filter_btn_title{
+  display: none;
+}
+
 .btn {
   font-weight: bold;
   font-size: 1rem;
@@ -21,13 +25,13 @@
   width: 100px;
 }
 
-.btn h1{
+.btn p{
 font-weight: bold;  
 padding-right: 8px;  
 transition: 0.6s;
 }
 
-.btn h1::before{
+.btn p::before{
   content: "";
   width: 0%;
   height: 2px;
@@ -37,12 +41,12 @@ transition: 0.6s;
   transition: 0.6s;
 }
 
-.btn:hover h1{
+.btn:hover p{
   color: #225876;
   transition: 0.6s;
 }
 
-.btn:hover h1::before{
+.btn:hover p::before{
   width: 80%;
   background: #225876;
   transition: 0.6s;
@@ -51,4 +55,66 @@ transition: 0.6s;
 .btn.btn:nth-child(1n+2){
   border-left: 2px solid #D9D9D9;  
   padding-left: 15px;
+}
+
+
+@media screen and (max-width:428px) {
+  #myBtnContainer{
+    position: relative;
+    top: 70px;
+    min-width: auto;
+    width: 100%;
+    height: 0px;
+    z-index: 10;
+}
+
+.filter_btn_title{
+    display: block;
+    position: relative;
+    border: 1px solid #83A0B1;
+    margin: 0 auto;
+    width: 90%;
+    height: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #ffffff;
+    
+}
+
+.filter_btn_title i{
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+}
+
+.filter_btn{
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    width: 90%;
+    margin: 0 auto;
+    transition: .5s;
+    border-left: 1px solid #83A0B1;
+    border-right: 1px solid #83A0B1;
+    
+}
+
+.filter_btn.act{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.btn{
+    min-width: auto;
+    width: 100%;
+    line-height: inherit;
+    padding: 0;
+    border-bottom: 1px solid #83A0B1;
+}
+
+.btn p{
+    padding: 0;
+}
+
+.btn.btn:nth-child(1n+2){
+    padding: 0;
+    border-left: none;
+}
 }

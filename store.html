@@ -65,20 +65,26 @@
 
     <!-- menu btn -->
     <div id="myBtnContainer">
-        <button class="btn" onclick="filterSelection('north')">
-            <h1>北部</h1> 
+        <button class="filter_btn_title">
+            <h1>加入我們</h1>
+            <i class="fa-solid fa-chevron-down"></i>
         </button>
-        <button class="btn" onclick="filterSelection('middle')">
-            <h1>中部</h1> 
-        </button>
-        <button class="btn" onclick="filterSelection('south')">
-            <h1>南部</h1> 
-        </button>
-        <button class="btn" onclick="filterSelection('all')">
-            <h1>所有據點</h1> 
-        </button>
+        <div class="filter_btn">
+            <button class="btn" onclick="filterSelection('north')">
+                <p>北部</p> 
+            </button>
+            <button class="btn" onclick="filterSelection('middle')">
+                <p>中部</p> 
+            </button>
+            <button class="btn" onclick="filterSelection('south')">
+                <p>南部</p> 
+            </button>
+            <button class="btn" onclick="filterSelection('all')">
+                <p>所有據點</p> 
+            </button>
+        </div>
     </div>
-    <div class="breadcrumb"></div>   
+    <div class="breadcrumb"></div>  
 
     <!-- store content -->
     <section> 

@@ -5,6 +5,13 @@ dropdown_btn.addEventListener("click", function(){
   dropdown_ol.classList.toggle("dropdown_active");
 });
 
+//filter_btn
+let filter_btn_title = document.getElementsByClassName("filter_btn_title")[0];
+filter_btn_title.addEventListener("click", function(){
+  let filter_btn = document.getElementsByClassName("filter_btn")[0];
+  filter_btn.classList.toggle("act")
+});
+
 
 /* ----------banner---------- */
 var swiper = new Swiper(".index_Swiper", {
@@ -18,37 +25,6 @@ var swiper = new Swiper(".index_Swiper", {
       prevEl: ".arrow_left",
   }, */
 });
-
-
-// 頁面上的按鈕
-let lightbox_el = document.getElementById("lightbox");
-let btn_modal = document.getElementsByClassName("btn_modal");
-
-for(let i = 0; i < btn_modal.length; i++){
-btn_modal[i].addEventListener("click", function(){
-  lightbox_el.classList.remove("none");
-  });
-}
-
-
-let btn_modal_close = document.getElementsByClassName("btn_modal_close")[0];
-btn_modal_close.addEventListener("click", function(){
-  lightbox_el.classList.add("none");
-});
-
-
-lightbox_el.addEventListener("click", function(){
-  this.classList.add("none");
-});
-
-// 點擊 lightbox 中的白色區域，不會關掉 modal
-lightbox_el.querySelector("article").addEventListener("click", function(e){
-  e.stopPropagation();
-});
-
-
-
-
 
 /* PC fi */
 filterSelection("all")

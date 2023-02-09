@@ -1,5 +1,3 @@
-@import url(./common/reset.css);
-
 html{
     font-size: 62.5%;
     background-color: #ffffff;
@@ -373,24 +371,29 @@ ol li a{
 
 /*-------------footer---------------*/
     .about_footer{
-        min-width: 428px;
+        min-width: auto;
+        margin: 0 auto;
+        width: 100%;
+        position: relative;
+        top: 110px;
     }
 
     .footer_nav{
-        min-width: 428px;
+        min-width: auto;
     }
 
     .footer_center{
-        min-width: 428px;
+        min-width: auto;
+        margin-bottom: 20px;
     }
 
     .footer_boder{
-        min-width: 250px;
+        min-width: auto;
         margin-left: 0;
     }
 
     .footer_connect{
-        min-width: 428px;
+        min-width: auto;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -402,7 +405,7 @@ ol li a{
     }
 
     .footer_btm{
-        min-width: 428px;
+        min-width: auto;
     }
 
     .footer_nav_bar{
@@ -422,6 +425,11 @@ ol li a{
 
     .footer_nav_icons li{
         padding-right: 10px;
+    }
+
+    .footer_nav_logo{
+        width: 100px;
+        margin-bottom: 0px;
     }
 
 }

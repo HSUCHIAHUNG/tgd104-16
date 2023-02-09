@@ -18,7 +18,6 @@ var swiper = new Swiper(".index_Swiper", {
 let lightbox_el = document.getElementById("lightbox");
 let btn_modal = document.getElementsByClassName("btn_modal")[0];
 btn_modal.addEventListener("click", function(){
-  console.log("aaa");
   lightbox_el.classList.remove("none");
 });
 

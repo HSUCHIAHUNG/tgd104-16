@@ -357,20 +357,13 @@ body {
   /* rwd */
 /*-----------store---------*/
 @media screen and (max-width:428px) {
-    #myBtnContainer{
-        position: relative;
-        min-width: auto;
-        top: 55px;
-        height: 70px;
-    }
-
-    .main_nav_boder{
-        min-width: auto;
-    }
-   
     .store_content{
         position: relative;
+        top: 110px;
         min-width: auto;
+        margin: 0 auto;
+        width: 90%;
+        
     }
 
     .store_text{
@@ -401,7 +394,7 @@ body {
         display: flex;
         flex-wrap: wrap;
         width: 180px;
-        padding-left: 20px;
+        padding-left: 10px;
         padding-right: 0;
     }
 
@@ -412,7 +405,7 @@ body {
 
     .store_right{
         height: 102px;
-        margin-right: 20px;
+        margin-right: 10px;
         flex-direction: column-reverse;
         align-items: flex-end;
     }
@@ -459,8 +452,8 @@ body {
     .btn_modal{
         margin: 0;
         margin-top: 10px;
-        height: 40px;
-   
-        ;
+        height: 41px;
+        width: 86px;
+        font-size: 0.9rem;
     }
 }
