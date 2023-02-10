@@ -20,18 +20,9 @@
 .about_top_left{
     margin-left: 60px;
     padding-right: 20px;
-    opacity: 0;
-    animation: topleft 1.5s ease .2s 1 forwards;
 }
 
-@keyframes topleft{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
+
 
 .about_top_left h1{
     color: rgba(131, 160, 177, 1);
@@ -217,3 +208,103 @@
     top:155px;
 }
 
+@media screen and (max-width:428px){
+    .about_story_wrapper{
+        min-width: auto;
+        position: relative;
+        top: 45px;
+        width: 100%;
+        margin-bottom: 85px;
+    }
+
+    .about_top{
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 60px auto; 
+        width: 90%;
+        min-width: auto;
+        
+    }
+
+    .about_top_left{
+        padding: 0;
+        margin: 0;
+    }
+
+    .about_top_right img{
+        width: 90%;
+        padding: 0;
+        padding-top: 25px;
+    }
+
+    .center_icon_wrapper{
+        min-width: auto;
+    }
+
+    .center_icon{
+        height: initial;
+        min-width: auto;
+        width: 100%;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    .center_icon ul{
+        min-width: auto;
+        flex-direction: column;
+        width: 90%;
+        padding-top: 26px;
+        justify-content: center;
+    }
+
+    .center_icon ul li{
+        border: 2px solid #83A0B1;
+        border-radius: 5%;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .center_icon img{
+        width: 25%;
+    }
+
+    .about_box_wrapper{
+        min-width: auto;
+    }
+
+    .about_title{
+        min-width: auto;
+        margin-bottom: 30px;
+    }
+
+    .about_box{
+        min-width: auto;
+        margin-bottom: 0;
+    }
+
+    .about_box ul{
+        min-width: auto;
+        width: 90%;
+    }
+
+    .about_box li{
+        width: 100%;
+        height: auto;
+    }
+
+    .about_box_text{
+        height: 22%;
+    }
+
+    .about_box li img{
+        width: 100%;
+    }
+
+    .about_footer{
+        top: 12px;
+    }
+
+}

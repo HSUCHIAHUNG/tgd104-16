@@ -128,17 +128,40 @@
 
 
 @media screen and (max-width:428px) {
-    #myBtnContainer{
-        padding-top: 50px;
-        min-width: 428px;
-    }
-
-    .main_nav_boder{
-        min-width: 428px;
-    }
-
     .news_wrapper{
-        min-width: 428px;
+        min-width: auto;
+        position: relative;
+        top: 115px;
+    }
+
+    .news_content_wrapper{
+        min-width: auto;
+        width: 100%;
+    }
+    
+    .news_content{
+        flex-direction: column;
+        align-items: center;
+        min-width: auto;
+        margin: 0;
+        padding: 18px;
+        box-sizing: border-box;
+        width: 90%;
+        /* outline: 3px solid red; */
+        margin-bottom: 35px;
+
+    }
+    
+    .news_content img{
+        max-width: initial;
+        
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    .news_content_text{
+        padding: 0;
     }
 
 }
+
