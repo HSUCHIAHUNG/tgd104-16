@@ -4,7 +4,9 @@
 .chain_box{
     width: 100%;
     min-width: 1200px;
-    margin-bottom: 100px;
+    box-sizing: border-box;
+    padding-top: 50px;
+    background-image: url(../images/chain/cb_bg.png);
 }
 
 .chain_box_title{
@@ -32,6 +34,7 @@
     margin: 0 auto;
     width: 970px;
     padding: 20px;
+    padding-bottom: 50px;
 }
 
 .chain_box li{
@@ -115,8 +118,7 @@
 /* 第二區textbox */
 .chain_content_both{
     display: flex;
-    margin-top: 40px;
-    margin-bottom: 150px;
+    box-sizing: border-box;
     width: 100%;
     min-width: 1200px;
 }
@@ -164,7 +166,8 @@
 .join_box{
     width: 100%;
     min-width: 1200px;
-    margin-bottom: 150px;
+    padding-bottom: 150px;
+    background-image: url(../images/chain/cb_bg.png);
 }
 
 .join_box_title{
@@ -175,6 +178,7 @@
     width: 100%;
     min-width: 1200px;
     color: rgb(131, 160, 177);
+    padding-top: 60px;
 }
 
 .join_box_title h1{
@@ -191,14 +195,14 @@
     justify-content: center;
     width: 100%;
     min-width: 1200px;
-    
+    margin-bottom: 20px;
 }
 
 .join_box li{
     display: flex;
     text-align: center;
-    width: 300px;
-    height: 300px;
+    max-width: 300px;
+    max-height: 300px;
     position: relative;
     margin-bottom: 40px;
     margin-left: 20px;
@@ -299,3 +303,110 @@
   }
   
 
+  @media screen and (max-width:428px){ 
+    .chain_box{
+        min-width: auto;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .chain_box_title{
+        min-width: auto;
+        position: relative;
+        top: 50px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .chain_box ul{
+        min-width: auto;
+        width: 100%;
+        align-self: center;
+        justify-content: center;
+        box-sizing: border-box;
+        padding: 0;
+        margin-top: 80px;
+        padding-bottom: 40px;
+    }
+
+    .chain_box li{
+        min-width: auto;
+        margin-bottom: 30px;
+        width: 100%;
+        min-width: auto;
+        max-width: 360px;
+        max-height: none;
+    }
+
+    .chain_box_text{
+        height: 21%;
+    }
+
+    .chain_box li img{
+        object-fit: cover;
+        
+        min-width: auto;
+    }
+
+    .chain_content_both{
+        flex-direction: column;
+        min-width: auto;
+        padding-bottom: 0;
+    }
+
+    .chain_box_title h1{
+        font-size: 2rem;
+    }
+
+    .chain_box_title p{
+        font-size: 1.1rem;
+    }
+
+    .join_box{
+        min-width: auto;
+        padding-top: 65px;
+        padding-bottom: 70px;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .join_box_title{
+        min-width: auto;
+        box-sizing: border-box;
+        margin: 0;
+        padding-bottom: 30px;
+        padding-top: 0;
+    }
+
+    .join_box ul{
+        min-width: auto;
+    }
+
+    .join_box li{
+        margin-left: 0;
+        max-width: 400px;
+        max-height: initial;
+        min-width: auto;
+    }
+
+    .join_box_title h1{
+        font-size: 2rem;
+    }
+
+    .join_box_title p{
+        font-size: 1.1rem;
+    }
+
+    .join_box li img{
+        min-width: auto;
+    }
+
+    .join_box_text{
+        height: 25%;
+    }
+
+    .about_footer{
+        top: 1px;
+    }
+
+  }
