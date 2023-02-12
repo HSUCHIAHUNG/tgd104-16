@@ -13,12 +13,12 @@ body{
     width: 100%;
     min-width: 1200px;
     height: 100px;
-    position: sticky;
+    
     z-index: 10;
     top: 0;
     left: 0;
     right: 0;
-    background-color: #ffffff;
+    background-color: rgba(44, 103, 135, 1);
     box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
 }
 
@@ -30,6 +30,8 @@ body{
     width: 240px;
     margin-left: 20px;
     display: block;
+    filter: drop-shadow(1px 1px 1px gray);
+    
 }
 
 .nav_logo_a{
@@ -40,30 +42,58 @@ body{
     display: flex;
     justify-content: center;
     width: 100%;
+    
 }
 
 .nav_bar li{
     padding-right: 20px;
     line-height: 100px;
+    
 }
 
 .nav_bar a{
     font-size: 1.2rem;
     font-weight: 600;
     text-decoration: none;
-    color: #000;
+    color: #ffffff;
+    display: block;
+    position: relative;
 }
 
+.nav_bar a::before{
+    content: "";
+    width: 0%;
+    position: absolute;
+    border-bottom:2px solid #ffffff ;
+    bottom: 34px;
+    left: 0;
+    transition: .6s;
+}
+
+
+
 .nav_bar li a span{
-    color: #215774;
+    
 }
 
 .dropdown_btn{
-    color: #000;
+    color: #ffffff;
     border: none;
     font-size: 1.2rem;
     font-weight: 600;
-    background-color: #f8f8f8;
+    background-color: rgba(44, 103, 135, 1);
+    position: relative;
+}
+
+.dropdown_btn::before{
+    content: "";
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    bottom: -5px;
+    left: 8px;
+    transition: 0.6s;
+    border-bottom: 2px solid #ffffff;
 }
 
 ol{
@@ -71,15 +101,17 @@ ol{
     display: none;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, .2);
     z-index: 10;
+    background-color: #9cbcce;
+    
 }
 
 .dropdown_active{
     display: block;
+    
 }
 
 ol li{
-    
-    background-color: #f8f8f8;
+    background-color: rgba(44, 103, 135, 1);
     width: 140px;
 }
 
@@ -107,34 +139,41 @@ ol li a{
 
 .nav_icons i{
     padding-left: 20px;
-    color: #83A0B1;
+    color: #ffffff;
     font-size: 1.4rem;
     
 }
 
 /* nav hover */
-.nav_bar li a:hover{
-    color: #215774;
+.nav_bar li:hover a::before {
+    width: 99%;
+    transition: 0.6s;
+}
+
+.dropdown_btn:hover::before{
+    width: 72%;
+    transition: 0.6s;
 }
 
 .nav_icons i:hover{
-    color: #215774;
+   
 }
 
 .dropdown_btn:hover{
-    color: #215774;
+  
 }
 
 /* footer */
 .about_footer{
     width: 100%;
     min-width: 1200px;
-    border-top: 2px solid #83A0B1;
+    background-color: rgba(44, 103, 135, 1);
+    color: #ffffff;
  
 }
 
 .footer_nav{
-
+    color: #ffffff;
     width: 100%;
     min-width: 1200px;
 }
@@ -147,19 +186,22 @@ ol li a{
     margin-bottom: 40px;
     width: 100%;
     min-width: 1200px;
+    color: #ffffff;
 }
 
 .footer_nav_logo{
     display: block;
     max-width: 150px;
     margin-bottom: 30px;
+    
 }
 
 .footer_boder{
     min-width: 600px;
-    border-bottom: 1px solid #83A0B1;
+    border-bottom: 1px solid #ffffff;
     margin-bottom: 20px;
     margin-left: 40px;
+    
 }
 
 .footer_connect{
@@ -167,21 +209,25 @@ ol li a{
     flex-wrap: wrap;
     justify-content: center;
     max-width: 600px;
+    
 }
 
 .footer_connect li{
     padding-left: 40px;
     font-size: .9rem;
     font-weight: bold;
+    
 }
 
 .footer_connect li p{
     padding-bottom: 10px;
+    color: #ffffff;
 }
 
 .footer_connect a{
     text-decoration: none;
     color: #000;
+    color: #ffffff;
 }
 
 .footer_btm{
@@ -212,7 +258,7 @@ ol li a{
     font-weight: bold;
     display: block;
     text-decoration: none;
-    color: #000;
+    color: #ffffff;
 }
 
 .footer_nav_icons{
@@ -222,13 +268,13 @@ ol li a{
 
 .footer_nav_icons i{
     padding-left: 20px;
-    color: #83A0B1;
+    color: #ffffff;
     font-size: 1.6rem;
 }
 
 /* hover */
 .footer_nav_icons i:hover{
-    color: #215774;
+  
 }
 
 /* menu bar */
