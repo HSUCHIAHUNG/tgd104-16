@@ -19,7 +19,7 @@ var swiper = new Swiper(".index_Swiper", {
 var swiper = new Swiper(".mysmenu", {
   speed: 1500,
   loop: true,
-  slidesPerView: 6,
+  slidesPerView: 3,
   spaceBetween: 20,
   pagination: {
     el: '.swiper-pagination',
@@ -46,4 +46,11 @@ var swiper = new Swiper(".mySwiper", {
     nextEl: ".arrow_right_news",
     prevEl: ".arrow_left_news",
 },
+});
+
+// nav bar子選單按鈕
+let dropdown_btn = document.getElementsByClassName("dropdown_btn")[0];
+dropdown_btn.addEventListener("click", function(){
+  dropdown_ol = dropdown_btn.nextElementSibling;
+  dropdown_ol.classList.toggle("dropdown_active");
 });

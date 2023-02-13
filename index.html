@@ -18,6 +18,7 @@
     <!-- css主檔 -->
     <link rel="stylesheet" href="./css/common/header_footer.css">
     <link rel="stylesheet" href="./css/common/banner_breadcrumb.css">
+    <link rel="stylesheet" href="./css/common/menu_btn.css">
     <link rel="stylesheet" href="./css/index.css">
 </head>
 
@@ -30,19 +31,19 @@
                 <img class="nav_logo" src="./images/header/header-icon03.png" alt="minute Tea-icon">
             </a>
             <ul class="nav_bar">
-                <li><a href="./about.html">關於我們</a></li>
-                <li><a href="./menu.html">推薦飲品</a></li>
-                <li><a href="./news.html">最新消息</a></li>
+                <li><a class="navli_bd" href="./about.html">關於我們</a></li>
+                <li><a class="navli_bd" href="./menu.html">推薦飲品</a></li>
+                <li><a class="navli_bd" href="./news.html">最新消息</a></li>
                 <li class="dropdown">
                     <button class="dropdown_btn" type="button">加入我們
                         <i class="fa-solid fa-caret-down"></i>
                     </button> 
                     <ol>
-                        <li><a href="./join-us.html">菁英招募</a></li>
-                        <li><a href="./chain.html">加盟資訊</a></li>
+                        <li><a class="navol" href="./join-us.html">菁英招募</a></li>
+                        <li><a class="navol" href="./chain.html">加盟資訊</a></li>
                     </ol>
                 </li>
-                <li><a href="./store.html"><span>門市資訊/線上點餐</span></a></li>
+                <li><a class="navli_bd" href="./store.html"><span>門市資訊/線上點餐</span></a></li>
             </ul>
             <ul class="nav_icons">
                 <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
@@ -77,68 +78,87 @@
         <div class="arrow_left"><i class="fa-solid fa-square-caret-left"></i></div>
     </div>
 
-    <!-- slide menu -->
-    <div class="index_smenu_title"
-    data-aos="fade-up"
-    data-aos-easing="ease"
-    data-aos-duration="1500"
-    data-aos-delay="250"
-    data-aos-once="true">
-        <h1>MINUTE LOCATION</h1>
-        <P><span>&#8226;</span>門市一覽<span>&#8226;</span></P>
-    </div>     
 
-    <div class="swiper mysmenu"
-    data-aos="fade-up"
-    data-aos-easing="ease"
-    data-aos-duration="1500"
-    data-aos-delay="250"
-    data-aos-once="true">
-        <div class="swiper-wrapper smenu_wrapper">
+    <section>  
+        <!-- <div class="smenu_leftbg"></div>
+ -->
+        <!-- slide menu -->
+        <!-- <div class="index_smenu_title"
+        data-aos="fade-up"
+        data-aos-easing="ease"
+        data-aos-duration="1500"
+        data-aos-delay="250"
+        data-aos-once="true">
+            <h1>MINUTE LOCATION</h1>
+            <P><span>&#8226;</span>門市一覽<span>&#8226;</span></P>
+        </div>   -->   
 
-            <div class="swiper-slide smenu">
-            <img src="./images/menu/menu01.png" alt="">
+        
+
+        <!-- <div class="swiper mysmenu"
+        data-aos="fade-up"
+        data-aos-easing="ease"
+        data-aos-duration="1500"
+        data-aos-delay="250"
+        data-aos-once="true">
+            <div class="swiper-wrapper smenu_wrapper">
+
+                <div class="swiper-slide smenu">
+                <img src="./images/menu/menu01.png" alt="">
+                <p><span>&#8211;</span> 特級綠茶 <span>&#8211;</span></p>
+                </div>
+                <div class="swiper-slide smenu">
+                    <img src="./images/menu/menu06.png" alt="">
+                    <p><span>&#8211;</span> 特級綠茶 <span>&#8211;</span></p>
+                </div>
+                <div class="swiper-slide smenu">
+                    <img src="./images/menu/menu07.png" alt="">
+                    <p><span>&#8211;</span> 特級綠茶 <span>&#8211;</span></p>
+                </div>
+                <div class="swiper-slide smenu">
+                    <img src="./images/menu/menu08.png" alt="">
+                    <p><span>&#8211;</span> 特級綠茶 <span>&#8211;</span></p>
+                </div>
+                <div class="swiper-slide smenu">
+                    <img src="./images/menu/menu09.png" alt="">
+                    <p><span>&#8211;</span> 特級綠茶 <span>&#8211;</span></p>
+                </div>
+                <div class="swiper-slide smenu">
+                    <img src="./images/menu/menu10.png" alt="">
+                    <p><span>&#8211;</span> 特級綠茶 <span>&#8211;</span></p>
+                </div>
+                <div class="swiper-slide smenu">
+                    <img src="./images/menu/menu11.png" alt="">
+                    <p><span>&#8211;</span> 特級綠茶 <span>&#8211;</span></p>
+                </div>
+                <div class="swiper-slide smenu">
+                    <img src="./images/menu/menu12.png" alt="">
+                    <p><span>&#8211;</span> 特級綠茶 <span>&#8211;</span></p>
+                </div>
+                <div class="swiper-slide smenu">
+                    <img src="./images/menu/menu13.png" alt="">
+                    <p><span>&#8211;</span> 特級綠茶 <span>&#8211;</span></p>
+                </div>
+                <div class="swiper-slide smenu">
+                    <img src="./images/menu/menu14.png" alt="">
+                    <p><span>&#8211;</span> 特級綠茶 <span>&#8211;</span></p>
+                </div>
+                <div class="swiper-slide smenu">
+                    <img src="./images/menu/menu15.png" alt="">
+                    <p><span>&#8211;</span> 特級綠茶 <span>&#8211;</span></p>
+                </div>
+                <div class="swiper-slide smenu">
+                    <img src="./images/menu/menu16.png" alt="">
+                    <p><span>&#8211;</span> 特級綠茶 <span>&#8211;</span></p>
+                </div>
             </div>
-            <div class="swiper-slide smenu">
-                <img src="./images/menu/menu06.png" alt="">
-            </div>
-            <div class="swiper-slide smenu">
-                <img src="./images/menu/menu07.png" alt="">
-            </div>
-            <div class="swiper-slide smenu">
-                <img src="./images/menu/menu08.png" alt="">
-            </div>
-            <div class="swiper-slide smenu">
-                <img src="./images/menu/menu09.png" alt="">
-            </div>
-            <div class="swiper-slide smenu">
-                <img src="./images/menu/menu10.png" alt="">
-            </div>
-            <div class="swiper-slide smenu">
-                <img src="./images/menu/menu11.png" alt="">
-            </div>
-            <div class="swiper-slide smenu">
-                <img src="./images/menu/menu12.png" alt="">
-            </div>
-            <div class="swiper-slide smenu">
-                <img src="./images/menu/menu13.png" alt="">
-            </div>
-            <div class="swiper-slide smenu">
-                <img src="./images/menu/menu14.png" alt="">
-            </div>
-            <div class="swiper-slide smenu">
-                <img src="./images/menu/menu15.png" alt="">
-            </div>
-            <div class="swiper-slide smenu">
-                <img src="./images/menu/menu16.png" alt="">
-            </div>
-        </div>
-            <div class="swiper-pagination smenu_pagination"></div>
-            <div class="menu_links"><a href="./menu.html"><p>查看更多 <i class="fa-solid fa-right-long"></i></p></a></div>
-    </div>
+                <div class="swiper-pagination smenu_pagination"></div>
+                <div class="menu_links"><a href="./menu.html"><p>查看更多 <i class="fa-solid fa-right-long"></i></p></a></div>
+        </div>  -->
+    </section>
 
     <!-- hover menu -->
-    <section>
+    <!-- <section>
         <div class="index_hmemu"
         data-aos="fade-up"
         data-aos-easing="ease"
@@ -209,10 +229,10 @@
                 </li>
             </ul>
         </div>
-    </section>
+    </section> -->
 
     <!-- slide news -->
-    <div class="index_news_title"
+    <!-- <div class="index_news_title"
     data-aos="fade-up"
     data-aos-easing="ease"
     data-aos-duration="1500"
@@ -343,17 +363,17 @@
         <div class="arrow_right_news"><i class="fa-solid fa-right-long"></i></div>
         <div class="arrow_left_news"><i class="fa-solid fa-left-long"></i></div>
         <div class="new_links"><a href="./news.html"><p>查看更多 <i class="fa-solid fa-right-long"></i></p></a></div>
-    </div>
+    </div> -->
 
     <!-- store -->
-    <section class="out_store_wrapper"
+    <!-- <section class="out_store_wrapper"
     data-aos="fade-up"
     data-aos-easing="ease"
     data-aos-duration="1500"
     data-aos-delay="250"
-    data-aos-once="true">
+    data-aos-once="true"> -->
         <!-- 上方導覽列 -->
-        <div class="store_wrapper"
+        <!-- <div class="store_wrapper"
         data-aos="fade-up"
         data-aos-easing="ease"
         data-aos-duration="1500"
@@ -362,9 +382,9 @@
             <div class="index_store_title">
                 <h1>MINUTE LOCATION</h1>
                 <P><span>&#8226;</span>門市一覽<span>&#8226;</span></P>
-            </div> 
+            </div>  -->
         <!-- 主要內容 -->    
-            <div class="store_content"
+            <!-- <div class="store_content"
             data-aos="fade-up"
             data-aos-easing="ease"
             data-aos-duration="1500"
@@ -381,8 +401,8 @@
                         <p>導航</p>
                     </div>
                 </div>
-            </div>
-            <div class="store_text_wrapper"
+            </div> -->
+            <!-- <div class="store_text_wrapper"
             data-aos="fade-up"
             data-aos-easing="ease"
             data-aos-duration="1500"
@@ -677,12 +697,12 @@
             </div>     
         </div>
     </section>
-    <div class="store_links"><a href="./store.html"><p>查看更多 <i class="fa-solid fa-right-long"></i></p></a></div>
+    <div class="store_links"><a href="./store.html"><p>查看更多 <i class="fa-solid fa-right-long"></i></p></a></div> -->
     
 
 
     <!-- footer -->
-    <footer class="about_footer">
+    <!-- <footer class="about_footer">
         <nav class="footer_nav">
             <div class="footer_center">
                 <a class="footer_logo" href="./index.html">
@@ -724,7 +744,7 @@
                 </ul>
             </div>
         </nav>
-    </footer> 
+    </footer> --> 
 
     <!-- AOS.js -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -732,7 +752,7 @@
 
     <!-- swiper.js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="./javascript/common-js/nav.js"></script>
+    <script src="./javascript/header_footer.js"></script>
     <script src="./javascript/index.js"></script>
 
 </body>
