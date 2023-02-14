@@ -48,11 +48,26 @@ var swiper = new Swiper(".Rmyhmenu", {
 
 
 /* ----------slide news---------- */
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".mynews", {
   loop: true,  
   slidesPerView: "auto",
   centeredSlides: true,
-  spaceBetween: 20,
+ 
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".arrow_right_news",
+    prevEl: ".arrow_left_news",
+},
+});
+
+/* ----------RWDslide news---------- */
+var swiper = new Swiper(".Rmynews", {
+  loop: true,  
+  slidesPerView: "auto",
+  centeredSlides: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
