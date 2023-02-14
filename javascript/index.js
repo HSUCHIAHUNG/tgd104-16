@@ -17,13 +17,28 @@ var swiper = new Swiper(".index_Swiper", {
 
 /* ----------slide menu---------- */
 var swiper = new Swiper(".mysmenu", {
+  slidesPerView: "auto",
   speed: 1500,
   loop: true,
-  slidesPerView: 3,
-  spaceBetween: 20,
+  centeredSlides: true,
   pagination: {
     el: '.swiper-pagination',
-    bulletActiveClass: 'swiper-pagination-bullet-active',
+    clickable: true,
+  },
+  autoplay: {
+    disableOnInteraction: false,
+  }
+});
+
+
+/* ----------hover menu---------- */
+var swiper = new Swiper(".Rmyhmenu", {
+  slidesPerView: "auto",
+  speed: 1500,
+  loop: true,
+  centeredSlides: true,
+  pagination: {
+    el: '.swiper-pagination',
     clickable: true,
   },
   autoplay: {

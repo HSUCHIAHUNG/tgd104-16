@@ -28,8 +28,7 @@ body {
     text-align: center;
     font-size: 18px;
 
-    /* Center slide text vertically */
-    display: -webkit-box;
+    /* display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
@@ -40,7 +39,7 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     -webkit-align-items: center;
-    align-items: center;
+    align-items: center; */
 }
 
 .swiper-slide img {
@@ -97,10 +96,8 @@ body {
     position: absolute;
     width: 50%;
     height: 650px;
-    /* min-width: 420px; */
     background-image: url(../images/index/smenu_bg.png);
     background-repeat: no-repeat;
-
     left: 13px;
 }
 
@@ -112,10 +109,6 @@ body {
     margin-bottom: 30px;
     font-weight: 600;
     color: rgb(131, 160, 177);
-}
-
-.smenu_bg{
-    background-image: url(../images/index/smenu_bg.png);
 }
 
 .index_smenu_title h1{
@@ -145,56 +138,30 @@ body {
 }
 
 /* swiper_slide_menu */
-html,
-body {
-  position: relative;
-  height: 100%;
+.index_smenu{
+    width: 959px;
+    overflow: hidden;
+    margin: 0 auto;
+    height: 434px;
 }
-
-body {
-
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
-}
-
-
 
 .mysmenu{
-    width: 50%;
+    width: 100%;
+    height: 350px;
+    padding-top: 30px;
+  
+    /* width: 50%;
     min-width: 1200px;
     height: 50%;
-    padding-top: 30px;
-}
-
-.smenu_wrapper{
-    height: 85%;
-    width: 100%;
-    min-width: 1200px;
+    padding-top: 30px; */
 }
 
 .smenu {
   text-align: center;
   font-size: 18px;
-
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-  
-  ;
+  width: 300px;
+  height: 280px;  
+  padding: 10px;  
 }
 
 .smenu img {
@@ -214,26 +181,24 @@ body {
 }
 
 .smenu_pagination{
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    padding-right: 10px;
-    box-sizing: border-box;
-    height: 75px;
-
+    padding-left: 12px;
+    
 }
 
 /* menu link */
 .menu_links {
     width: 100%;
+    height: 100px;
     min-width: 1200px;
+    position: absolute;
+    right: 11px;
 }
 
 .menu_links p{
     position: absolute;
-    left: 0;
+
     right: 0;
-    bottom: 0;
+    bottom: -46;
     margin: auto;
 
     padding: 10px;
@@ -272,7 +237,6 @@ body {
     min-width: 1200px;
     height: 750px;
     margin-top: 100px;
-    
 }
 
 .index_hmemu ul{
@@ -325,6 +289,7 @@ body {
     object-position: 40% 50%;
 }
 
+
 /* title */
 .index_hmenu_title{
     text-align: center;
@@ -359,7 +324,7 @@ body {
     padding-left: 5px;
     font-size: 1.5rem;
     font-weight: 500;
-}
+} 
 
 /* hover */
 .index_hmemu li:hover {
@@ -385,11 +350,100 @@ body {
     display: block;
     line-height: 1.2;
 }
+ 
+
+
+/* ---------Hmenu Rwd用------------ */
+
+/* title */
+.Rhmenu_title_wrapper{
+    text-align: center;
+    width: 100%;
+    min-width: 1200px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: rgb(131, 160, 177);
+    display: none;
+}
+
+.Rhmenu_title_wrapper h1{
+    font-size: 2.1rem;
+    padding-bottom: 5px;
+}
+
+.Rhmenu_title_wrapper p{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.Rhmenu_title_wrapper span:first-child::after{
+    content: "[";
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.Rhmenu_title_wrapper span:last-child::before{
+    content: "]";
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 1.5rem;
+    font-weight: 500;
+} 
+
+/* swiper_slide_menu */
+.Rindex_hmeny{
+    width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+    height: 634px;
+    display: none;
+}
+
+.Rmyhmenu{
+    width: 100%;
+    /* height: 350px; */
+    padding-top: 30px;
+}
+
+/* hmenu slide_rwd用 */
+.Rhmenu {
+  position: relative;  
+  text-align: center;
+  font-size: 18px;
+  width: 350px;
+  height: 580px;  
+  padding: 10px;  
+}
+
+.Rhmemu_content{
+    top: 0;
+    position: absolute;
+    color: #fff;
+    text-shadow: 1px 1px 5px #000;
+}
+
+.Rhmemu_content img{
+    width: 80px;
+}
+
+.Rhmemu_text{
+
+}
+
+.Rhmemu_text h1{
+
+}
+
+.Rhmemu_text p{
+
+}
+
 
 /* -----------slide news------------ */
-/* -----------slide news------------ */
 /* swiper news*/
-html,
+/* html,
 body {
     position: relative;
     height: 100%;
@@ -412,9 +466,6 @@ body {
 .news_slids {
     text-align: center;
     font-size: 18px;
-    
-
-    /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -453,10 +504,10 @@ body {
 .newsbtn{
     padding-left: 50px;
     box-sizing: border-box;
-}
+} */
 
 /* news content */
-.news_box{
+/* .news_box{
     display: flex;
     
     margin-left: 50px;
@@ -560,10 +611,10 @@ body {
 
 .new_links a i{
     padding-left: 20px;
-}
+} */
 
 /* news arrow */
-.arrow_right_news{
+/* .arrow_right_news{
     position: absolute;
     right: 0;
     top: 0;
@@ -592,7 +643,7 @@ body {
     color: #225876;
     opacity: .7;
 
-}
+} */
 
 /* news content hover */
 .news_box:hover{
@@ -878,9 +929,10 @@ body {
         min-width: auto;
     }
 
-    .swiper-slide img{
+    .banner_slide img{
         width: 90%;
         min-width: auto;
+        margin: 0 auto;
     }
 
     .banner_slide{
@@ -897,10 +949,12 @@ body {
         left: 18px;
     }
 
+   
+
     .index_smenu_title{
         min-width: auto;
         position: relative;
-        top: 25px;
+        top: 55px;
     }
 
     .index_smenu_title h1{
@@ -912,16 +966,31 @@ body {
         font-size: 1.1rem;
     }
 
-    .index_smenu_title span:first-child::after{
+    /* .index_smenu_title span:first-child::after{
         font-size: 1rem;
     }
 
     .index_smenu_title span:last-child::before{
         font-size: 1rem;
+    } */
+
+    .index_hmemu{
+        display: none;    
+    }
+
+    .index_hmenu_title{
+        display: none;
+    }
+
+    .index_smenu{
+        min-width: auto;
+        padding-top: 30px;
+        width: 90%;
     }
 
     .mysmenu{
-        min-width: auto;
+        min-width: auto;   
+        padding-top: 15px;
     }
 
     .smenu_wrapper{
@@ -930,10 +999,98 @@ body {
 
     .smenu{
         min-width: auto;
+        width: 100%;
+    }
+
+    .smenu img{
+        width: 100%;
     }
 
     .menu_links{
         min-width: auto;
+        right: 100px;
     }
+
+    .smenu_leftbg{
+        display: none;
+    }
+
+    /* hmenu_slide rwd */
+    .Rhmenu_title_wrapper{
+        min-width: auto;
+        display: block;
+    }
+
+    .Rhmenu_title{
+        min-width: auto;
+        padding-top: 40px;
+    }
+
+    .Rhmenu_title_wrapper  h1{
+        font-size: 1.5rem;
+
+    }
+
+    .Rhmenu_title_wrapper p{
+        font-size: 1.1rem;
+    }
+
+    .Rindex_hmeny{
+        min-width: auto;
+        width: 100%;
+        height: 500px;
+        overflow-x: hidden;
+        display: block;
+    }
+
+    .Rmyhmenu{
+        min-width: auto;
+        width: 100%;
+        padding-top: 0px;
+    }
+
+    .Rhmenu{
+        /* height: 453px; */
+        min-width: auto;
+        width: 86%;
+        padding: 2px;
+        height: 400px;
+    }
+
+    .Rhmemu_img {
+        width: 200px;
+    }
+
+    .Rhmemu_content{
+        bottom: 40px;
+        top: initial;
+        /* padding-bottom: 40px; */
+    }
+
+    .Rhmemu_text{
+        font-size: 1rem;
+        height: 150px;
+    }
+
+    .Rhmemu_text h1{
+        text-align: center;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+
+    .Rhmemu_text p{
+        text-align: left;
+        padding-left: 10px;
+        font-weight: 600;
+        line-height: 20px;
+
+    }
+
+    .Rhmemu_content img{
+        margin: 0 auto;
+    }
+
 
 }
