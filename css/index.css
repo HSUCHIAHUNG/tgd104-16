@@ -1239,7 +1239,7 @@ body {
     .Rindex_mynews{
         min-width: auto;
         position: relative;
-        height: 700px;
+        height: 710px;
         display: block;
     }
     
@@ -1307,7 +1307,7 @@ body {
         min-width: auto;
     }
 
-    .store_left h1:nth-child(2n+1){
+    .store_left h1:nth-child(1n+2){
         display: none;
     }
 

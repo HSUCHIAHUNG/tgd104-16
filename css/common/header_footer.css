@@ -142,14 +142,30 @@ ol li a{
     display: flex;
     line-height: 100px;
     margin-right: 50px;
+}
 
+.nav_icons li{
+    
+}
+
+.nav_icons p{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.2rem;
+    
+}
+
+.nav_icons a{
+    display: flex;
+    width: 143px;
+    align-items: center;
+    text-decoration: none;
 }
 
 .nav_icons i{
-    padding-left: 20px;
+    padding-right: 10px;
     color: #ffffff;
     font-size: 1.4rem;
-    
 }
 
 /* nav hover */
