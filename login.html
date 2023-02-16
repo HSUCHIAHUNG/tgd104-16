@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- css主檔 -->
+    <link rel="stylesheet" href="./css/common/header_footer.css">
+    <link rel="stylesheet" href="./css/common/banner_breadcrumb.css">
+    <link rel="stylesheet" href="./css/common/menu_btn.css">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+
+
+ <body>
+    <!-- header navbar -->
+    <header class="header_main">
+        <div id="menu_bar" class="fas fa-bars"></div>
+        <nav class="header_nav">
+            <a href="./index.html" class="nav_logo_a">
+                <img class="nav_logo" src="./images/header/header-icon03.png" alt="minute Tea-icon">
+            </a>
+            <ul class="nav_bar">
+                <li><a class="navli_bd" href="./about.html">關於我們</a></li>
+                <li><a class="navli_bd" href="./menu.html">推薦飲品</a></li>
+                <li><a class="navli_bd" href="./news.html">最新消息</a></li>
+                <li class="dropdown">
+                    <button class="dropdown_btn" type="button">加入我們
+                        <i class="fa-solid fa-caret-down"></i>
+                    </button> 
+                    <ol>
+                        <li><a class="navol" href="./join-us.html">菁英招募</a></li>
+                        <li><a class="navol" href="./chain.html">加盟資訊</a></li>
+                    </ol>
+                </li>
+                <li><a class="navli_bd" href="./store.html"><span>門市資訊/線上點餐</span></a></li>
+            </ul>
+            <ul class="nav_icons">
+                <li><a href="#"><i class="fa-solid fa-circle-user"></i><p>登陸 / 註冊</p></a></li>
+                <!-- <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
+                <li><a href="https://line.me/zh-hant/" target="_blank"><i class="fa-brands fa-line"></i></a></li>
+                <li><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a></li> -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- banner & breadcrumb -->
+    <!-- <section>
+        <div class="about_banner">
+            <img class="about_bimg" src="./images/about/about-banner.png" alt="about_banner">
+            <div class="about_banner_text" >
+                <h1>LATEST NEWS</h1>
+                <P><span>&#8226;</span>最新消息<span>&#8226;</span></P>
+            </div>
+            
+        </div>
+    </section> -->
+
+    
+    <div class="board">
+        <a href="#" id="logout"><i class="fas fa-sign-out-alt"></i></a>
+        <div class="container">
+
+            <div class="lightbluebox">
+        
+                <div class="login-box">
+                    <h1>Sign in</h1>
+                    <div class="third-party-box">
+                    <button class="third-party-btn"><span><i class="fab fa-facebook-f"></i></span></button>
+                    <button class="third-party-btn"><span><i class="fab fa-google-plus-g"></i></span></button>
+                    <button class="third-party-btn"><span><i class="fab fa-github"></i></span></button>
+                    </div>
+                    <h4>or use your account</h4>
+                    <div class="input-group">
+                    <input id="loginEmail" type="text" placeholder="Email">
+                    <input id="loginPassword" type="password" placeholder="Password">
+                    </div>
+                    <button id="loginBtn" class="signin-btn">
+                    <span class="front">SIGN IN</span>
+                    </button>
+                </div>
+
+                <div class="signup-box">
+                    <h1>Ceate Account</h1>
+                    <div class="third-party-box">
+                    <button class="third-party-btn"><span><i class="fab fa-facebook-f"></i></span></button>
+                    <button class="third-party-btn"><span><i class="fab fa-google-plus-g"></i></span></button>
+                    <button class="third-party-btn"><span><i class="fab fa-github"></i></span></button>
+                    </div>
+                    <h4>or use your email for registration</h4>
+                    <div class="input-group">
+                    <input id="signUpName" type="text" placeholder="Name">
+                    <input id="signUpEmail" type="text" placeholder="Email">
+                    <input id="signUpPassword" type="password" placeholder="Password">
+                    </div>
+                    <button id="signUpBtn" class="signin-btn">
+                    <span class="front">SIGN UP</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="yellowbox">
+                <div class="hello">
+                    <div class="textcontent">
+                        <h1 class="sayHi">Hello, Friend !</h1>
+                        <span>Enter your personal details and start journey with us</span>
+                    </div>
+                    <button class="signup-btn">
+                        <span class="front">SIGN UP</span>
+                    </button>
+                </div>
+                <div class="welcome">
+                    <div class="textcontent">
+                        <h1>Welcome Back !</h1>
+                        <span>Too keep connected with us please login with your personal info</span>
+                    </div>
+                    <button class="signup-btn">
+                        <span class="front">SIGN IN</span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+
+
+   
+
+    <!-- footer -->
+    <footer class="about_footer">
+        <nav class="footer_nav">
+            <div class="footer_center">
+                <a class="footer_logo" href="./index.html">
+                    <img class="footer_nav_logo" src="./images/footer/footer-logo02.png" alt="minute Tea-icon">
+                </a>
+                <div class="footer_boder"></div>
+                <ul class="footer_connect">
+                    <li>
+                        <p>電話 : 033836213</p>
+                    </li>
+                    <li>
+                        <p>傳真 : 886-4-23812576</p>
+                    </li>
+                    <li>
+                        <p>加盟/客服專線 : 0800-812213</p>
+                    </li>
+                    <li>
+                        <a href="mailto:h0989541162@gmail.com">地址 : 桃園市大園區菓林里17巷50-1號  / 聯絡我們 <i class="fa-solid fa-envelope"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_btm">
+                <p>本網站為緯育TibaMe前端工程師班第82期學員專題作品，<br>本平台僅供學習、展示之
+                    用。參考資源: 大苑子 、<br>五桐號、茶湯會、Q Buger、lkea 。</p>
+                <ul class="footer_nav_bar">
+                    <li><a href="./about.html">關於我們</a></li>
+                    <li><a href="./menu.html">推薦飲品</a></li>
+                    <li><a href="./news.html">最新消息</a></li>
+                    <li><a href="./store.html">門市資訊</a></li>
+                    <li><a href="./join-us.html">菁英招募</a></li>
+                    <li><a href="./chain.html">加盟資訊</a></li>
+                </ul>
+
+                <ul class="footer_nav_icons">
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
+                    <li><a href="https://line.me/zh-hant/" target="_blank"><i class="fa-brands fa-line"></i></a></li>
+                    <li><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
+
+    <!-- js主檔 -->
+    <script src="./javascript/header_footer.js"></script>
+    <script src="./javascript/is_min.js"></script>
+    <script src="./javascript/login.js"></script>
+
+</body>
+</html>

@@ -145,7 +145,7 @@ ol li a{
 }
 
 .nav_icons li{
-    
+
 }
 
 .nav_icons p{
@@ -420,20 +420,30 @@ ol li a{
         display: flex;
         justify-content: center;
         box-sizing: border-box;
-        width: 100%;
+        /* width: 100%; */
         min-width: auto;
         z-index: 10;
-        top: 650px;
-        padding-right: 15px;
+        top: 32px;
+        right: -30px;
+
         transition: 1s;
         overflow: hidden;
+
+    }
+
+    .nav_icons p{
         display: none;
+    }
+
+    .nav_icons a{
+        width: auto;
     }
 
     .nav_icons i{
         color: #f8f8f8;
-        font-size: 1.4rem;
-        padding-left: 15px;
+        font-size: 1.6rem;
+
+        /* padding-left: 15px; */
     }
 
     .nav_bar{
