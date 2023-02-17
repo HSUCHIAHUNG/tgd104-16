@@ -10,11 +10,15 @@ dropdown_btn.addEventListener("click", function(){
 //重整頁面
 function firstRnder() {
   const sayHiElement = document.querySelector('.sayHi')
+  const loginName = document.querySelector('#login_name')
   const storageMemory = localStorage.getItem('MemoryAccount')
-  let status = localStorage.getItem('status')
+  let status = localStorage.getItem('status');
+  
+  //如果
   !status && localStorage.setItem('status', 'login')
   if(storageMemory){
     sayHiElement.textContent = storageMemory
+    loginName.textContent = storageMemory
   }
   changePage()
 }
@@ -77,9 +81,10 @@ window.addEventListener('DOMContentLoaded', function(){
     const signUpName = document.querySelector('#signUpName')
     const signUpEmail = document.querySelector('#signUpEmail')
     const signUpPassword = document.querySelector('#signUpPassword')
+    const signUp_input = document.querySelectorAll(".signUp_input")
+   
     const storageKey = signUpEmail.value + signUpPassword.value 
     const checkUser = Boolean(localStorage.getItem(storageKey))//如果尚未創建會得到false
-    console.log(localStorage.getItem(storageKey));
 
     function successAction() { 
       if(checkUser) { //如果是true代表已創建就alert
@@ -94,10 +99,39 @@ window.addEventListener('DOMContentLoaded', function(){
 
     if(signUpEmail.value === '' || signUpPassword.value === ''){
       alert('輸入欄位請勿空白')
+      // for(let i = 0; i < signUp_input.length; i++){
+      //   signUp_input[i].classList.add("-on")
+      // } 
     } else {
       successAction()
     }
   })
+
+
+  // 創建帳號驗證 Submit
+  let signup_confirm = document.getElementById("signup_confirm");
+
+  signup_confirm.addEventListener("submit", function(e) {
+    let signUpName = document.querySelector('#signUpName');
+    let signUpEmail = document.getElementById('signUpEmail');
+    let signUpPassword = document.querySelector('#signUpPassword');
+    let signup_str = "";
+    let send_data = true;
+    console.log(signUpEmail.value);
+    if (is.email(signUpEmail.value)) {
+      signUpEmail.classList.remove("-on");
+    } else {
+      signUpEmail.classList.add("-on");
+      send_data = false;
+      
+    }
+
+    if (!send_data) {
+      e.preventDefault();
+    }
+
+  }); 
+
 
   // login button
   // 登陸
@@ -105,10 +139,12 @@ window.addEventListener('DOMContentLoaded', function(){
     const loginEmail = document.querySelector('#loginEmail') 
     const loginPassword = document.querySelector('#loginPassword')
     const sayHiElement = document.querySelector('.sayHi')
+    const loginName = document.querySelector('#login_name')
     const storageKey = loginEmail.value + loginPassword.value 
     const userName = localStorage.getItem(storageKey) //使用者註冊時輸入的key、value
     const checkUser = Boolean(userName) // 布林判斷使用者是否有輸入值
-    
+    const login_input = document.querySelectorAll(".login_input")
+  
 
     function loginAction() {
       if(!checkUser) { //如果false代表未創建帳戶就alert
@@ -120,13 +156,18 @@ window.addEventListener('DOMContentLoaded', function(){
       loginPassword.value = ''
       alert('登入成功')
       sayHiElement.textContent = `Hi~ ${userName}`
+      loginName.textContent = `Hi~ ${userName}`
       if(confirmMemory){
         localStorage.setItem('MemoryAccount', `Hi~ ${userName}`)
+
       }
     }
 
     if(!loginEmail.value || !loginPassword.value){
       alert('輸入欄位請勿空白')
+      for(let i = 0; i < login_input.length; i++){
+        login_input[i].classList.add("-on")
+      } 
     } else {
       loginAction()
     }
@@ -140,3 +181,5 @@ window.addEventListener('DOMContentLoaded', function(){
     sayHiElement.textContent = 'Hello, Friend !'
   })
 })
+
+//登入名稱更換

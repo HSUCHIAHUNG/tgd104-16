@@ -432,16 +432,21 @@ ol li a{
     }
 
     .nav_icons p{
-        display: none;
+        font-size: .9rem;
     }
 
     .nav_icons a{
         width: auto;
+        position: relative;
+        top: -34px;
     }
+
+
 
     .nav_icons i{
         color: #f8f8f8;
-        font-size: 1.6rem;
+        font-size: 1.2rem;
+        padding-right: 7px;
 
         /* padding-left: 15px; */
     }

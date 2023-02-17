@@ -44,7 +44,7 @@
                 <li><a class="navli_bd" href="./store.html"><span>門市資訊/線上點餐</span></a></li>
             </ul>
             <ul class="nav_icons">
-                <li><a href="#"><i class="fa-solid fa-circle-user"></i><p>登陸 / 註冊</p></a></li>
+                <li><a href="./login.html"><i class="fa-solid fa-circle-user"></i><p id="login_name">登陸 / 註冊</p></a></li>
                 <!-- <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
                 <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
                 <li><a href="https://line.me/zh-hant/" target="_blank"><i class="fa-brands fa-line"></i></a></li>
@@ -69,10 +69,10 @@
     <div class="board">
         <a href="#" id="logout"><i class="fas fa-sign-out-alt"></i></a>
         <div class="container">
-
+            
             <div class="lightbluebox">
         
-                <div class="login-box">
+                <form class="login-box" id="login_confirm">
                     <h1>Sign in</h1>
                     <div class="third-party-box">
                     <button class="third-party-btn"><span><i class="fab fa-facebook-f"></i></span></button>
@@ -81,15 +81,15 @@
                     </div>
                     <h4>or use your account</h4>
                     <div class="input-group">
-                    <input id="loginEmail" type="text" placeholder="Email">
-                    <input id="loginPassword" type="password" placeholder="Password">
+                    <input id="loginEmail" class="login_input" type="text" placeholder="Email">
+                    <input id="loginPassword" class="login_input" type="password" placeholder="Password">
                     </div>
-                    <button id="loginBtn" class="signin-btn">
+                    <button type="submit" id="loginBtn" class="signin-btn">
                     <span class="front">SIGN IN</span>
                     </button>
-                </div>
+                </form>
 
-                <div class="signup-box">
+                <form class="signup-box" id="signup_confirm">
                     <h1>Ceate Account</h1>
                     <div class="third-party-box">
                     <button class="third-party-btn"><span><i class="fab fa-facebook-f"></i></span></button>
@@ -98,16 +98,15 @@
                     </div>
                     <h4>or use your email for registration</h4>
                     <div class="input-group">
-                    <input id="signUpName" type="text" placeholder="Name">
-                    <input id="signUpEmail" type="text" placeholder="Email">
-                    <input id="signUpPassword" type="password" placeholder="Password">
+                    <input id="signUpName" class="signUp_input" type="text" placeholder="Name">
+                    <input id="signUpEmail" class="signUp_input" type="text" placeholder="Email">
+                    <input id="signUpPassword" class="signUp_input" type="password" placeholder="Password">
                     </div>
-                    <button id="signUpBtn" class="signin-btn">
+                    <button type="submit" id="signUpBtn" class="signin-btn">
                     <span class="front">SIGN UP</span>
                     </button>
-                </div>
+                </form>
             </div>
-
             <div class="yellowbox">
                 <div class="hello">
                     <div class="textcontent">
@@ -132,9 +131,6 @@
         </div>
     </div>
     
-
-
-   
 
     <!-- footer -->
     <footer class="about_footer">
