@@ -21,6 +21,16 @@
     min-width: 1200px;
 }
 
+.twoarea{
+    /* background-image: url(../images/chain/cb_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed; */
+
+    background-color: rgba(164, 211, 249, .2);
+
+}
+
 .text_left{
     margin-left: 60px;
     padding-right: 20px;
@@ -135,10 +145,15 @@
 
 /* box */
 .join_box{
-    margin-bottom: 150px;
+    padding-bottom: 150px;
     margin-top: 140px;
     width: 100%;
     min-width: 1200px;
+
+    background-image: url(../images/chain/cb_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
 }
 
 .join_box_title{
@@ -259,7 +274,6 @@
     padding: 10px 15px;
     margin: 20px;
     font-weight: 600;
-    background-color: white; 
     border-radius: 5px;
     border: 2px solid rgb(131, 160, 177);
     color: black;
@@ -331,12 +345,13 @@
     .twoarea{
         flex-direction: column;
         margin-top: 30px;
+        width: 100%;
     }
 
     .img_left {
         min-width: auto;
         margin-bottom: 40px;
-        width: 90%;
+        width: 80%;
 
     }
 
@@ -351,7 +366,7 @@
         margin: 0;
         padding: 0;
         min-width: auto;
-        width: 90%;
+        width: 80%;
     }
 
     .threearea{

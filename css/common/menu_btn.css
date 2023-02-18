@@ -17,12 +17,12 @@
   padding-left: 8px;
   color: black;
   border: none;
-  background-color: #ffffff;
   line-height: 15px;
   cursor: pointer;
   position: relative;
   transition: 0.6s;
   width: 100px;
+  background-color: initial;
 }
 
 .btn p{

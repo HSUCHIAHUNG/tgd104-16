@@ -1,5 +1,12 @@
 @import url(./common/reset.css);
 
+body{
+    background-image: url(../images/chain/cb_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+}
+
 /* 下方box主要內容 */
 .news_wrapper{
     display: flex;

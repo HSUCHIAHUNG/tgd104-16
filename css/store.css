@@ -1,7 +1,10 @@
 @import url(./common/reset.css);
 
 body{
-    background-color: #ffffff;
+    background-image: url(../images/chain/cb_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
 }
 
 /* store content */
@@ -57,6 +60,10 @@ body{
     font-size: 1rem;
     font-weight: bold;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.btn{
+    background-color: initial;
 }
 
 .store_left p:last-child{

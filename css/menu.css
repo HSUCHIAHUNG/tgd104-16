@@ -1,5 +1,11 @@
 @import url(./common/reset.css);
 
+body{
+    background-image: url(../images/chain/cb_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+}
 /* -----------menu content------------- */
 .menu_wrapper{
     margin: 0 auto;
@@ -43,6 +49,7 @@
 .columnimg img:hover{
     transform:scale(1.2,1.2);
 }
+
 
 
 /* The "show" class is added to the filtered elements */

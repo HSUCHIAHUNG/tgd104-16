@@ -451,11 +451,11 @@ ol li a{
         /* padding-left: 15px; */
     }
 
-    .nav_bar{
+    .nav_bar{/* 關 */
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
 
-    .nav_bar.active{
+    .nav_bar.active{ /* click的時候展開 */
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
 
