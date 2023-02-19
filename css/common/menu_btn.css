@@ -94,7 +94,7 @@ transition: 0.6s;
     transition: .5s;
     border-left: 1px solid #83A0B1;
     border-right: 1px solid #83A0B1;
-    
+    background-color: #ffffff;
 }
 
 .filter_btn.act{
