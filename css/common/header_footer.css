@@ -262,7 +262,7 @@ ol li a{
 .footer_btm{
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+
     justify-content: space-between; 
     width: 100%;
     min-width: 1200px;
@@ -310,6 +310,8 @@ ol li a{
 #menu_bar{
     display: none;
 } 
+
+
 
 /*-------------RWD---------------*/
 /*-------------navbar---------------*/

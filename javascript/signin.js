@@ -41,7 +41,7 @@ inform.addEventListener("submit", function(e){
         inpassword.classList.remove("-error");
     }else {
         inpassword.classList.add("-error");
-        alert( "your password : "+ (inpassword.value) );
+        alert("必須包含 英文 大/小 寫 , 數字 , 8-30 字元");
         send_data = false;
     }
 
