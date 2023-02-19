@@ -115,7 +115,6 @@ body{
     padding: 5px;
     width: 120px;
     margin-right: 40px;
-    background-color: #ffffff;
 }
 
 .btn_modal i span{
@@ -212,7 +211,6 @@ body{
 /* -----------lightnox banner------------ */
 html,body {
   position: relative;
-  height: 100%;
 }
 
 body {

@@ -1,12 +1,19 @@
 @import url(./common/reset.css);
 
+body{
+    background-image: url(../images/chain/cb_bg.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 /* 第一區img box */
 .chain_box{
     width: 100%;
     min-width: 1200px;
     box-sizing: border-box;
     padding-top: 50px;
-    background-image: url(../images/chain/cb_bg.png);
+   
 }
 
 .chain_box_title{
@@ -167,7 +174,6 @@
     width: 100%;
     min-width: 1200px;
     padding-bottom: 150px;
-    background-image: url(../images/chain/cb_bg.png);
 }
 
 .join_box_title{
@@ -290,7 +296,6 @@
     padding: 10px 15px;
     margin: 20px;
     font-weight: 600;
-    background-color: white; 
     border-radius: 5px;
     border: 2px solid rgb(131, 160, 177);
     color: black;

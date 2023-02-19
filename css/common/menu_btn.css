@@ -109,6 +109,10 @@ transition: 0.6s;
     border-bottom: 1px solid #83A0B1;
 }
 
+.btn p::before{
+  position: initial;
+}
+
 .btn p{
     padding: 0;
 }
