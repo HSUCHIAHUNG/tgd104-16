@@ -145,7 +145,7 @@ ol li a{
 }
 
 .nav_icons li{
-
+    height: 50px;
 }
 
 .nav_icons p{
@@ -345,13 +345,22 @@ ol li a{
 
     .nav_logo{
         margin: 0px auto;
-        margin-bottom: 10px;
+        /* margin-bottom: 10px; */
         width: 165px;
     }
 
     .nav_logo_a{
         display: block;
         min-width: auto;
+        width: fit-content;
+
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        height: fit-content;
     }
 
     .nav_bar{

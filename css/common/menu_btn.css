@@ -69,16 +69,17 @@ transition: 0.6s;
 }
 
 .filter_btn_title{
-    display: block;
-    position: relative;
-    border: 1px solid #83A0B1;
-    margin: 0 auto;
-    width: 90%;
-    height: 50px;
-    font-size: 1rem;
-    font-weight: bold;
-    background-color: #ffffff;
-    
+  display: inline-block; /* 或 block */
+  position: relative;
+  border: 1px solid #83A0B1;
+  margin: 0 auto;
+  width: 90%;
+  height: 50px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #ffffff;
+  padding: 10px; /* 添加內邊距 */
+  outline: none; /* 清除聚焦時的外框線 */
 }
 
 .filter_btn_title i{
